@@ -1,0 +1,10 @@
+# NuGet package folder
+/src/*/packages/*
+
+# Project bin/obj compilation folders
+/src/**/bin/
+/src/**/obj/
+
+# Visual Studio folders
+/src/**/.vs/
+

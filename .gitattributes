@@ -1,0 +1,8 @@
+* text=auto
+
+*.fs text eol=crlf
+*.fsproj text eol=crlf
+*.sln text eol=crlf
+*.config text eol=crlf
+
+*.md text eol=lf

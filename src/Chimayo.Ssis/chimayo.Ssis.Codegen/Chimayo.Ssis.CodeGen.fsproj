@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0b6c7f30-0eea-4bd5-843b-904a9d8ff3f5</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Chimayo.Ssis.CodeGen</RootNamespace>
+    <AssemblyName>Chimayo.Ssis.CodeGen</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Name>Chimayo.Ssis.CodeGen</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Debug\Chimayo.Ssis.CodeGen.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <DocumentationFile>bin\Release\Chimayo.Ssis.CodeGen.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="IndentationMonad.fs" />
+    <Compile Include="Internals.fs" />
+    <Compile Include="QuotationHelper.fs" />
+    <Compile Include="TypeNameRegistry.fs" />
+    <Compile Include="CodeDsl.fs" />
+    <Compile Include="CodeDslPrinter.fs" />
+    <Compile Include="CodeDslBuilder.fs" />
+    <Compile Include="Core.fs" />
+    <Compile Include="LoggingOptions.fs" />
+    <Compile Include="ConnectionManagers.fs" />
+    <Compile Include="Variables.fs" />
+    <Compile Include="PackageConfigurations.fs" />
+    <Compile Include="LogProviders.fs" />
+    <Compile Include="ExecutableTaskCommon.fs" />
+    <Compile Include="ExecuteSqlTask.fs" />
+    <Compile Include="ExecutePackageTask.fs" />
+    <Compile Include="ExecuteExpressionTask.fs" />
+    <Compile Include="ExecuteProcessTask.fs" />
+    <Compile Include="SequenceTask.fs" />
+    <Compile Include="ForEachLoopTask.fs" />
+    <Compile Include="ForLoopTask.fs" />
+    <Compile Include="PipelineCore.fs" />
+    <Compile Include="Pipeline.Source.FlatFileSource.fs" />
+    <Compile Include="Pipeline.Source.OleDb.fs" />
+    <Compile Include="Pipeline.Source.Xml.fs" />
+    <Compile Include="Pipeline.Transform.DataConversion.fs" />
+    <Compile Include="Pipeline.Transform.DerivedColumn.fs" />
+    <Compile Include="Pipeline.Transform.Lookup.fs" />
+    <Compile Include="Pipeline.Transform.Aggregate.fs" />
+    <Compile Include="Pipeline.Transform.ConditionalSplit.fs" />
+    <Compile Include="Pipeline.Transform.UnionAll.fs" />
+    <Compile Include="Pipeline.Transform.Multicast.fs" />
+    <Compile Include="Pipeline.Transform.RowCount.fs" />
+    <Compile Include="Pipeline.Destination.OleDb.fs" />
+    <Compile Include="Pipeline.Destination.Recordset.fs" />
+    <Compile Include="PipelineTask.fs" />
+    <Compile Include="Executables.fs" />
+    <Compile Include="CodeGenerator.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chimayo.Ssis.Ast\Chimayo.Ssis.Ast.fsproj">
+      <Name>Chimayo.Ssis.Ast</Name>
+      <Project>{566e4220-d9cf-4f31-9909-aafc7f5b0c2f}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Chimayo.Ssis.Common\Chimayo.Ssis.Common.fsproj">
+      <Name>Chimayo.Ssis.Common</Name>
+      <Project>{60de70be-5238-4684-9f41-af17495e93ba}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '11.0'">
+      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')">
+        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets')">
+        <FSharpTargetsPath>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.FSharp.Targets</FSharpTargetsPath>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <Import Project="$(FSharpTargetsPath)" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
