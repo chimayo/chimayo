@@ -30,6 +30,20 @@ NuGet packages are coming. For the moment, you need to download and compile the 
 
 I am currently in the process of setting up the project for community involvement. Please be patient.
 
+# Roadmap and development tracking
+
+The following roadmap is entirely provisional, and I welcome suggestions from the community.
+
+---
+	0.1	Initial release, NuGet packages, basic documentation
+	0.2	Automated regression tests
+	0.3	Extraction of XML library to separate project
+	0.4	Extraction of code generation library to separate project
+	0.5	Support for SQL Server 2014 and 2016 packages
+---
+
+All work is tracked in GitHub issues.
+
 # Links
 
 * Main website [https://chimayo.github.io](https://chimayo.github.io)
