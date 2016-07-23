@@ -8,3 +8,4 @@
 # Visual Studio folders
 /src/**/.vs/
 
+/src/Chimayo.Ssis/.paket/paket.exe

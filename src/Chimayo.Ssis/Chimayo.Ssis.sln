@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{CC7E32DD-D3E7-4B1B-AF7D-C5C4646BE2EB}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Common", "Chimayo.Ssis.Common\Chimayo.Ssis.Common.fsproj", "{60DE70BE-5238-4684-9F41-AF17495E93BA}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Xml", "Chimayo.Ssis.Xml\Chimayo.Ssis.Xml.fsproj", "{C5670AD1-618B-4F64-889F-910BB849FBD9}"
