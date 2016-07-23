@@ -1,0 +1,6 @@
+source https://api.nuget.org/v3/index.json
+framework >= net46
+
+nuget FParsec 1.0.2
+nuget FSharp.Compiler.Service 2.0.0.6
+nuget FSharp.Core 4.0.0.1
