@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Common - Chimayo.Ssis</title>
+    <meta name="description" content=""/>
+    <meta name="author" content="Chimayo community"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="/chimayo/content/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Chimayo.Ssis</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/chimayo/index.html">Home</a></li>
+                      <li><a href="/chimayo/license.html">License</a></li>
+                      <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                      <li><a href="http://nuget.org/packages/Chimayo.Ssis">Get it from NuGet</a></li>
+                      <li><a href="http://github.com/chimayo/chimayo">View it on GitHub</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <div class="container">
+        
+
+
+
+<h1>Common</h1>
+<p>
+  <span>Namespace: Chimayo.Ssis.Writer2012.Pipeline</span><br />
+</p>
+<div class="xmldoc">
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1596', 1596)" onmouseover="showTip(event, '1596', 1596)">
+            createColumnBase (...)
+          </code>
+          <div class="tip" id="1596">
+            <strong>Signature:</strong> refIdBuilder:(string -&gt; DtsIdMonad&lt;string * &#39;?10559&gt;) -&gt; elementName:string -&gt; name:string -&gt; dataType:T -&gt; additionalAttributes:seq&lt;XmlAttribute&gt; -&gt; additionalContent:seq&lt;XmlContent&gt; -&gt; DtsIdMonad&lt;XmlContent&gt;<br />
+                          <strong>Type parameters:</strong> '?10559          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L117-117" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1597', 1597)" onmouseover="showTip(event, '1597', 1597)">
+            createExternalMetadataInputColumn (...)
+          </code>
+          <div class="tip" id="1597">
+            <strong>Signature:</strong> parents:string list -&gt; component:DfComponent -&gt; inputName:string -&gt; name:string -&gt; T -&gt; seq&lt;XmlAttribute&gt; -&gt; seq&lt;XmlContent&gt; -&gt; DtsIdMonad&lt;XmlContent&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L159-159" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1598', 1598)" onmouseover="showTip(event, '1598', 1598)">
+            createExternalMetadataOutputColumn (...)
+          </code>
+          <div class="tip" id="1598">
+            <strong>Signature:</strong> parents:string list -&gt; component:DfComponent -&gt; outputName:string -&gt; name:string -&gt; T -&gt; seq&lt;XmlAttribute&gt; -&gt; seq&lt;XmlContent&gt; -&gt; DtsIdMonad&lt;XmlContent&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L162-162" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1599', 1599)" onmouseover="showTip(event, '1599', 1599)">
+            createFriendlyExpressionProperties (...)
+          </code>
+          <div class="tip" id="1599">
+            <strong>Signature:</strong> parents:string list -&gt; DfExpression -&gt; XmlContent list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L174-174" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1600', 1600)" onmouseover="showTip(event, '1600', 1600)">
+            createInputColumn (...)
+          </code>
+          <div class="tip" id="1600">
+            <strong>Signature:</strong> parents:string list -&gt; component:DfComponent -&gt; inputName:string -&gt; name:string -&gt; T -&gt; seq&lt;XmlAttribute&gt; -&gt; seq&lt;XmlContent&gt; -&gt; DtsIdMonad&lt;XmlContent&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L153-153" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1601', 1601)" onmouseover="showTip(event, '1601', 1601)">
+            createInputColumnBase (...)
+          </code>
+          <div class="tip" id="1601">
+            <strong>Signature:</strong> refIdBuilder:(string -&gt; DtsIdMonad&lt;string * &#39;?10561&gt;) -&gt; lineageIdBuilder:DtsIdMonad&lt;string * &#39;?10562&gt; -&gt; elementName:string -&gt; name:string -&gt; cachedName:string -&gt; cachedDataType:T -&gt; additionalAttributes:seq&lt;XmlAttribute&gt; -&gt; additionalContent:seq&lt;XmlContent&gt; -&gt; DtsIdMonad&lt;XmlContent&gt;<br />
+                          <strong>Type parameters:</strong> '?10561, '?10562          </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L133-133" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1602', 1602)" onmouseover="showTip(event, '1602', 1602)">
+            createOutputColumn (...)
+          </code>
+          <div class="tip" id="1602">
+            <strong>Signature:</strong> parents:string list -&gt; component:DfComponent -&gt; outputName:string -&gt; name:string -&gt; T -&gt; seq&lt;XmlAttribute&gt; -&gt; seq&lt;XmlContent&gt; -&gt; DtsIdMonad&lt;XmlContent&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L156-156" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1603', 1603)" onmouseover="showTip(event, '1603', 1603)">
+            createProperties elems
+          </code>
+          <div class="tip" id="1603">
+            <strong>Signature:</strong> elems:XmlContent list -&gt; XmlContent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L115-115" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1604', 1604)" onmouseover="showTip(event, '1604', 1604)">
+            createProperty (...)
+          </code>
+          <div class="tip" id="1604">
+            <strong>Signature:</strong> name:string -&gt; dataType:string -&gt; form:string option -&gt; isArray:bool -&gt; typeConverter:string option -&gt; uiTypeEditor:string option -&gt; containsId:bool -&gt; isExpressionType:bool -&gt; arrayElements:XmlContent list -&gt; additionalContent:seq&lt;XmlContent&gt; -&gt; XmlContent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L93-93" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1605', 1605)" onmouseover="showTip(event, '1605', 1605)">
+            createPropertyArrayElement (...)
+          </code>
+          <div class="tip" id="1605">
+            <strong>Signature:</strong> dataTypeOption:T option -&gt; content:XmlContent list -&gt; XmlContent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L87-87" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1606', 1606)" onmouseover="showTip(event, '1606', 1606)">
+            createReferencedInputColumn (...)
+          </code>
+          <div class="tip" id="1606">
+            <strong>Signature:</strong> parents:string list -&gt; component:DfComponent -&gt; inputName:string -&gt; sourceColumnRef:DfInputColumnReference -&gt; T -&gt; seq&lt;XmlAttribute&gt; -&gt; seq&lt;XmlContent&gt; -&gt; DtsIdMonad&lt;XmlContent&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L165-165" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1607', 1607)" onmouseover="showTip(event, '1607', 1607)">
+            createSimpleProperty name dataType value
+          </code>
+          <div class="tip" id="1607">
+            <strong>Signature:</strong> name:string -&gt; dataType:string -&gt; value:string -&gt; XmlContent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L113-113" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1608', 1608)" onmouseover="showTip(event, '1608', 1608)">
+            getPipelineCachedDataTypeAttributes dt
+          </code>
+          <div class="tip" id="1608">
+            <strong>Signature:</strong> dt:T -&gt; XmlAttribute list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L68-68" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1609', 1609)" onmouseover="showTip(event, '1609', 1609)">
+            getPipelineDataTypeAttributes dt
+          </code>
+          <div class="tip" id="1609">
+            <strong>Signature:</strong> dt:T -&gt; XmlAttribute list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L49-49" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1610', 1610)" onmouseover="showTip(event, '1610', 1610)">
+            pipelineDataTypeToName dataType
+          </code>
+          <div class="tip" id="1610">
+            <strong>Signature:</strong> dataType:T -&gt; string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Writer2012/Pipeline.Common.fs#L15-15" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <script type="text/javascript" src="/chimayo/content/tips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>

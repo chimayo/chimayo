@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lookup - Chimayo.Ssis</title>
+    <meta name="description" content=""/>
+    <meta name="author" content="Chimayo community"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="/chimayo/content/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Chimayo.Ssis</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/chimayo/index.html">Home</a></li>
+                      <li><a href="/chimayo/license.html">License</a></li>
+                      <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                      <li><a href="http://nuget.org/packages/Chimayo.Ssis">Get it from NuGet</a></li>
+                      <li><a href="http://github.com/chimayo/chimayo">View it on GitHub</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <div class="container">
+        
+
+
+
+<h1>Lookup</h1>
+<p>
+  <span>Namespace: Chimayo.Ssis.Ast.DataFlowApi</span><br />
+</p>
+<div class="xmldoc">
+<p>API for creating and manipulating Lookup pipeline components</p>
+
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '494', 494)" onmouseover="showTip(event, '494', 494)">
+            add_join_column column
+          </code>
+          <div class="tip" id="494">
+            <strong>Signature:</strong> column:DfLookupJoinColumn -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L794-794" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Add a join column</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '495', 495)" onmouseover="showTip(event, '495', 495)">
+            add_join_columns 
+          </code>
+          <div class="tip" id="495">
+            <strong>Signature:</strong> DfLookupJoinColumn list -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L796-796" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Add multiple join columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '496', 496)" onmouseover="showTip(event, '496', 496)">
+            add_output_column column c
+          </code>
+          <div class="tip" id="496">
+            <strong>Signature:</strong> column:DfLookupOutputColumn -&gt; c:DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L799-799" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Adds a column to the list of exposed output columns of the pipeline component</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '497', 497)" onmouseover="showTip(event, '497', 497)">
+            add_output_columns 
+          </code>
+          <div class="tip" id="497">
+            <strong>Signature:</strong> DfLookupOutputColumn list -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L804-804" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Adds multiple column to the list of exposed output columns of the pipeline component</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '498', 498)" onmouseover="showTip(event, '498', 498)">
+            clear_columns 
+          </code>
+          <div class="tip" id="498">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L813-813" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Remove all defined columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '499', 499)" onmouseover="showTip(event, '499', 499)">
+            clear_join_columns 
+          </code>
+          <div class="tip" id="499">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L807-807" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Remove all join columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '500', 500)" onmouseover="showTip(event, '500', 500)">
+            clear_output_columns 
+          </code>
+          <div class="tip" id="500">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L809-809" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Remove all output columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '501', 501)" onmouseover="showTip(event, '501', 501)">
+            connect_input 
+          </code>
+          <div class="tip" id="501">
+            <strong>Signature:</strong> DfComponent -&gt; string -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L885-885" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Connects two pipeline components</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '502', 502)" onmouseover="showTip(event, '502', 502)">
+            connect_input_by_name 
+          </code>
+          <div class="tip" id="502">
+            <strong>Signature:</strong> string -&gt; string -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L887-887" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Connects two pipeline components</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '503', 503)" onmouseover="showTip(event, '503', 503)">
+            create name adapters
+          </code>
+          <div class="tip" id="503">
+            <strong>Signature:</strong> name:string -&gt; adapters:(DfComponent -&gt; DfComponent) list -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L753-753" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Create a new instance of a Lookup component and then apply a series of transformations</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '504', 504)" onmouseover="showTip(event, '504', 504)">
+            define_join_column (...)
+          </code>
+          <div class="tip" id="504">
+            <strong>Signature:</strong> sourceComponent:string -&gt; sourceOutput:string -&gt; sourceColumn:string -&gt; referenceTableColumnName:string -&gt; parameterIndexOption:int option -&gt; DfLookupJoinColumn<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L892-892" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Construct a new join column definition</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '505', 505)" onmouseover="showTip(event, '505', 505)">
+            define_output_column (...)
+          </code>
+          <div class="tip" id="505">
+            <strong>Signature:</strong> name:string -&gt; referenceTableColumnName:string -&gt; dataType:DfDataType -&gt; truncationDisposition:DfOutputColumnRowDisposition -&gt; DfLookupOutputColumn<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L900-900" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Construct a new output column definition</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '506', 506)" onmouseover="showTip(event, '506', 506)">
+            disable_no_match_output 
+          </code>
+          <div class="tip" id="506">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L828-828" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Disable the no match output</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '507', 507)" onmouseover="showTip(event, '507', 507)">
+            disconnect_input 
+          </code>
+          <div class="tip" id="507">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L889-889" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Removes the connection, if any</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '508', 508)" onmouseover="showTip(event, '508', 508)">
+            enable_no_match_output 
+          </code>
+          <div class="tip" id="508">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L826-826" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Enable the no match output</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '509', 509)" onmouseover="showTip(event, '509', 509)">
+            error_output_name 
+          </code>
+          <div class="tip" id="509">
+            <strong>Signature:</strong> string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L737-737" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Defined name of the Lookup error output. Has to match SSIS internals.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '510', 510)" onmouseover="showTip(event, '510', 510)">
+            get 
+          </code>
+          <div class="tip" id="510">
+            <strong>Signature:</strong> DfComponent -&gt; DfLookupConfiguration<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L733-733" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Alias for ingress</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '511', 511)" onmouseover="showTip(event, '511', 511)">
+            get_cache_connection_enabled 
+          </code>
+          <div class="tip" id="511">
+            <strong>Signature:</strong> DfComponent -&gt; bool<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L831-831" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Determines if the cache connection is enabled</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '512', 512)" onmouseover="showTip(event, '512', 512)">
+            get_cache_mode 
+          </code>
+          <div class="tip" id="512">
+            <strong>Signature:</strong> DfComponent -&gt; DfLookupCacheMode<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L833-833" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the cache mode</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '513', 513)" onmouseover="showTip(event, '513', 513)">
+            get_connection 
+          </code>
+          <div class="tip" id="513">
+            <strong>Signature:</strong> DfComponent -&gt; CfRef<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L835-835" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the connection</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '514', 514)" onmouseover="showTip(event, '514', 514)">
+            get_default_code_page 
+          </code>
+          <div class="tip" id="514">
+            <strong>Signature:</strong> DfComponent -&gt; int<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L851-851" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the default code page</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '515', 515)" onmouseover="showTip(event, '515', 515)">
+            get_error_row_disposition 
+          </code>
+          <div class="tip" id="515">
+            <strong>Signature:</strong> DfComponent -&gt; DfOutputColumnRowDisposition<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L853-853" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the error row disposition</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '516', 516)" onmouseover="showTip(event, '516', 516)">
+            get_join_columns 
+          </code>
+          <div class="tip" id="516">
+            <strong>Signature:</strong> DfComponent -&gt; DfLookupJoinColumn list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L839-839" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get all join columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '517', 517)" onmouseover="showTip(event, '517', 517)">
+            get_max_memory_usage_mb_x64 
+          </code>
+          <div class="tip" id="517">
+            <strong>Signature:</strong> DfComponent -&gt; int<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L845-845" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the memory limit for 64-bit execution</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '518', 518)" onmouseover="showTip(event, '518', 518)">
+            get_max_memory_usage_mb_x86 
+          </code>
+          <div class="tip" id="518">
+            <strong>Signature:</strong> DfComponent -&gt; int<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L843-843" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the memory limit for 32-bit execution</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '519', 519)" onmouseover="showTip(event, '519', 519)">
+            get_no_match_cache_percentage 
+          </code>
+          <div class="tip" id="519">
+            <strong>Signature:</strong> DfComponent -&gt; int<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L837-837" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the no match cache percentage</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '520', 520)" onmouseover="showTip(event, '520', 520)">
+            get_output_columns 
+          </code>
+          <div class="tip" id="520">
+            <strong>Signature:</strong> DfComponent -&gt; DfLookupOutputColumn list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L841-841" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get all output columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '521', 521)" onmouseover="showTip(event, '521', 521)">
+            get_parameterised_source 
+          </code>
+          <div class="tip" id="521">
+            <strong>Signature:</strong> DfComponent -&gt; string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L849-849" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the lookup data parameterised source specification, used when not in the full cache mode</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '522', 522)" onmouseover="showTip(event, '522', 522)">
+            get_source 
+          </code>
+          <div class="tip" id="522">
+            <strong>Signature:</strong> DfComponent -&gt; string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L847-847" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the lookup data source specification</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '523', 523)" onmouseover="showTip(event, '523', 523)">
+            get_treat_duplicate_keys_as_errors 
+          </code>
+          <div class="tip" id="523">
+            <strong>Signature:</strong> DfComponent -&gt; bool<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L855-855" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the treat duplicate keys as errors flag</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '524', 524)" onmouseover="showTip(event, '524', 524)">
+            has_no_match_ouput 
+          </code>
+          <div class="tip" id="524">
+            <strong>Signature:</strong> DfComponent -&gt; bool<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L791-791" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the status of the no match output</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '525', 525)" onmouseover="showTip(event, '525', 525)">
+            input_name 
+          </code>
+          <div class="tip" id="525">
+            <strong>Signature:</strong> string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L741-741" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Defined name of the Lookup input. Has to match SSIS internals.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '526', 526)" onmouseover="showTip(event, '526', 526)">
+            no_match_output_name 
+          </code>
+          <div class="tip" id="526">
+            <strong>Signature:</strong> string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L743-743" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Defined name of the Lookup no match output. Has to match SSIS internals.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '527', 527)" onmouseover="showTip(event, '527', 527)">
+            output_name 
+          </code>
+          <div class="tip" id="527">
+            <strong>Signature:</strong> string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L739-739" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Defined name of the Lookup output. Has to match SSIS internals.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '528', 528)" onmouseover="showTip(event, '528', 528)">
+            remap_join_column (...)
+          </code>
+          <div class="tip" id="528">
+            <strong>Signature:</strong> referenceTableColumnName:string -&gt; sourceComponent:string -&gt; sourceOutput:string -&gt; sourceColumn:string -&gt; c:DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L921-921" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Relink an existing join column to a different upstream column</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '529', 529)" onmouseover="showTip(event, '529', 529)">
+            rename_output_column (...)
+          </code>
+          <div class="tip" id="529">
+            <strong>Signature:</strong> columnName:String -&gt; newColumnName:string -&gt; c:DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L909-909" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Change the name of an output column</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '530', 530)" onmouseover="showTip(event, '530', 530)">
+            set_cache_connection_enabled flag
+          </code>
+          <div class="tip" id="530">
+            <strong>Signature:</strong> flag:bool -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L858-858" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the cache connection enabled flag</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '531', 531)" onmouseover="showTip(event, '531', 531)">
+            set_cache_mode mode
+          </code>
+          <div class="tip" id="531">
+            <strong>Signature:</strong> mode:DfLookupCacheMode -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L860-860" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the cache mode</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '532', 532)" onmouseover="showTip(event, '532', 532)">
+            set_connection conn
+          </code>
+          <div class="tip" id="532">
+            <strong>Signature:</strong> conn:CfRef -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L862-862" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the connection</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '533', 533)" onmouseover="showTip(event, '533', 533)">
+            set_default_code_page codePage
+          </code>
+          <div class="tip" id="533">
+            <strong>Signature:</strong> codePage:int -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L878-878" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the default code page</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '534', 534)" onmouseover="showTip(event, '534', 534)">
+            set_error_row_disposition value
+          </code>
+          <div class="tip" id="534">
+            <strong>Signature:</strong> value:DfOutputColumnRowDisposition -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L880-880" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the error row disposition</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '535', 535)" onmouseover="showTip(event, '535', 535)">
+            set_join_coumns columns
+          </code>
+          <div class="tip" id="535">
+            <strong>Signature:</strong> columns:DfLookupJoinColumn list -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L866-866" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Replace all join columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '536', 536)" onmouseover="showTip(event, '536', 536)">
+            set_max_memory_usage_mb_x64 value
+          </code>
+          <div class="tip" id="536">
+            <strong>Signature:</strong> value:int -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L872-872" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the memory limit for 64-bit execution</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '537', 537)" onmouseover="showTip(event, '537', 537)">
+            set_max_memory_usage_mb_x86 value
+          </code>
+          <div class="tip" id="537">
+            <strong>Signature:</strong> value:int -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L870-870" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the memory limit for 32-bit execution</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '538', 538)" onmouseover="showTip(event, '538', 538)">
+            set_no_match_cache_percentage value
+          </code>
+          <div class="tip" id="538">
+            <strong>Signature:</strong> value:int -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L864-864" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the no match cache percentage</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '539', 539)" onmouseover="showTip(event, '539', 539)">
+            set_output_coumns columns
+          </code>
+          <div class="tip" id="539">
+            <strong>Signature:</strong> columns:DfLookupOutputColumn list -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L868-868" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Replace all output columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '540', 540)" onmouseover="showTip(event, '540', 540)">
+            set_parameterised_source value
+          </code>
+          <div class="tip" id="540">
+            <strong>Signature:</strong> value:string -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L876-876" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the lookup data parameterised source specification, used when not in the full cache mode</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '541', 541)" onmouseover="showTip(event, '541', 541)">
+            set_source value
+          </code>
+          <div class="tip" id="541">
+            <strong>Signature:</strong> value:string -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L874-874" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the lookup data source specification</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '542', 542)" onmouseover="showTip(event, '542', 542)">
+            set_treat_duplicate_keys_as_errors value
+          </code>
+          <div class="tip" id="542">
+            <strong>Signature:</strong> value:bool -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L882-882" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the treat duplicate keys as errors flag</p>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <script type="text/javascript" src="/chimayo/content/tips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>

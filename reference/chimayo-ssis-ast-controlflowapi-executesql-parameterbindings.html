@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParameterBindings - Chimayo.Ssis</title>
+    <meta name="description" content=""/>
+    <meta name="author" content="Chimayo community"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="/chimayo/content/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Chimayo.Ssis</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/chimayo/index.html">Home</a></li>
+                      <li><a href="/chimayo/license.html">License</a></li>
+                      <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                      <li><a href="http://nuget.org/packages/Chimayo.Ssis">Get it from NuGet</a></li>
+                      <li><a href="http://github.com/chimayo/chimayo">View it on GitHub</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <div class="container">
+        
+
+
+
+<h1>ParameterBindings</h1>
+<p>
+  <span>Namespace: Chimayo.Ssis.Ast.ControlFlowApi</span><br />
+  <span>Parent Module: <a href="chimayo-ssis-ast-controlflowapi-executesql.html">ExecuteSql</a></span>
+</p>
+<div class="xmldoc">
+<p>API for working with execute sql task parameter bindings</p>
+
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '119', 119)" onmouseover="showTip(event, '119', 119)">
+            addParameterBinding pb
+          </code>
+          <div class="tip" id="119">
+            <strong>Signature:</strong> pb:CfExecuteSqlParameterBinding -&gt; CftExecutable -&gt; CftExecutable<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L319-319" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '120', 120)" onmouseover="showTip(event, '120', 120)">
+            addParameterBindings 
+          </code>
+          <div class="tip" id="120">
+            <strong>Signature:</strong> CfExecuteSqlParameterBinding list -&gt; CftExecutable -&gt; CftExecutable<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L320-320" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '121', 121)" onmouseover="showTip(event, '121', 121)">
+            clearParameterBindings 
+          </code>
+          <div class="tip" id="121">
+            <strong>Signature:</strong> CftExecutable -&gt; CftExecutable<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L316-316" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '122', 122)" onmouseover="showTip(event, '122', 122)">
+            createAndAddParameterBinding (...)
+          </code>
+          <div class="tip" id="122">
+            <strong>Signature:</strong> name:string -&gt; variable:string -&gt; direction:CfParameterDirection -&gt; dataType:CfDataType -&gt; sizeOption:int option -&gt; CftExecutable -&gt; CftExecutable<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L331-331" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '123', 123)" onmouseover="showTip(event, '123', 123)">
+            createParameterBinding (...)
+          </code>
+          <div class="tip" id="123">
+            <strong>Signature:</strong> name:string -&gt; variable:string -&gt; direction:CfParameterDirection -&gt; dataType:CfDataType -&gt; sizeOption:int option -&gt; CfExecuteSqlParameterBinding<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L322-322" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '124', 124)" onmouseover="showTip(event, '124', 124)">
+            getDataType pb
+          </code>
+          <div class="tip" id="124">
+            <strong>Signature:</strong> pb:CfExecuteSqlParameterBinding -&gt; CfDataType<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L338-338" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '125', 125)" onmouseover="showTip(event, '125', 125)">
+            getDirection pb
+          </code>
+          <div class="tip" id="125">
+            <strong>Signature:</strong> pb:CfExecuteSqlParameterBinding -&gt; CfParameterDirection<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L337-337" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '126', 126)" onmouseover="showTip(event, '126', 126)">
+            getParameterBindings 
+          </code>
+          <div class="tip" id="126">
+            <strong>Signature:</strong> CftExecutable -&gt; CfExecuteSqlParameterBinding list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L318-318" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '127', 127)" onmouseover="showTip(event, '127', 127)">
+            getParameterName pb
+          </code>
+          <div class="tip" id="127">
+            <strong>Signature:</strong> pb:CfExecuteSqlParameterBinding -&gt; string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L335-335" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '128', 128)" onmouseover="showTip(event, '128', 128)">
+            getParameterSize pb
+          </code>
+          <div class="tip" id="128">
+            <strong>Signature:</strong> pb:CfExecuteSqlParameterBinding -&gt; int option<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L339-339" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '129', 129)" onmouseover="showTip(event, '129', 129)">
+            getTargetVariable pb
+          </code>
+          <div class="tip" id="129">
+            <strong>Signature:</strong> pb:CfExecuteSqlParameterBinding -&gt; CfVariableRef<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L336-336" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '130', 130)" onmouseover="showTip(event, '130', 130)">
+            setDataType dataType pb
+          </code>
+          <div class="tip" id="130">
+            <strong>Signature:</strong> dataType:CfDataType -&gt; pb:CfExecuteSqlParameterBinding -&gt; CfExecuteSqlParameterBinding<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L344-344" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '131', 131)" onmouseover="showTip(event, '131', 131)">
+            setDirection direction pb
+          </code>
+          <div class="tip" id="131">
+            <strong>Signature:</strong> direction:CfParameterDirection -&gt; pb:CfExecuteSqlParameterBinding -&gt; CfExecuteSqlParameterBinding<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L343-343" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '132', 132)" onmouseover="showTip(event, '132', 132)">
+            setParameterName name pb
+          </code>
+          <div class="tip" id="132">
+            <strong>Signature:</strong> name:string -&gt; pb:CfExecuteSqlParameterBinding -&gt; CfExecuteSqlParameterBinding<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L341-341" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '133', 133)" onmouseover="showTip(event, '133', 133)">
+            setParameterSize size pb
+          </code>
+          <div class="tip" id="133">
+            <strong>Signature:</strong> size:int option -&gt; pb:CfExecuteSqlParameterBinding -&gt; CfExecuteSqlParameterBinding<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L345-345" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '134', 134)" onmouseover="showTip(event, '134', 134)">
+            setTargetVariable variable pb
+          </code>
+          <div class="tip" id="134">
+            <strong>Signature:</strong> variable:string -&gt; pb:CfExecuteSqlParameterBinding -&gt; CfExecuteSqlParameterBinding<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/ExecutablesModule.fs#L342-342" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <script type="text/javascript" src="/chimayo/content/tips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>

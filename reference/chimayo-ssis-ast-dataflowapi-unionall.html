@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UnionAll - Chimayo.Ssis</title>
+    <meta name="description" content=""/>
+    <meta name="author" content="Chimayo community"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="/chimayo/content/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Chimayo.Ssis</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/chimayo/index.html">Home</a></li>
+                      <li><a href="/chimayo/license.html">License</a></li>
+                      <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                      <li><a href="http://nuget.org/packages/Chimayo.Ssis">Get it from NuGet</a></li>
+                      <li><a href="http://github.com/chimayo/chimayo">View it on GitHub</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <div class="container">
+        
+
+
+
+<h1>UnionAll</h1>
+<p>
+  <span>Namespace: Chimayo.Ssis.Ast.DataFlowApi</span><br />
+</p>
+<div class="xmldoc">
+<p>API for creating and manipulating Union All pipeline components</p>
+
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '657', 657)" onmouseover="showTip(event, '657', 657)">
+            add_column column
+          </code>
+          <div class="tip" id="657">
+            <strong>Signature:</strong> column:DfUnionAllColumn -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1321-1321" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Add a column</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '658', 658)" onmouseover="showTip(event, '658', 658)">
+            add_columns columns
+          </code>
+          <div class="tip" id="658">
+            <strong>Signature:</strong> columns:DfUnionAllColumn list -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1323-1323" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Add mmultiple columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '659', 659)" onmouseover="showTip(event, '659', 659)">
+            clear_columns c
+          </code>
+          <div class="tip" id="659">
+            <strong>Signature:</strong> c:DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1316-1316" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Removes all columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '660', 660)" onmouseover="showTip(event, '660', 660)">
+            connect_input inputName
+          </code>
+          <div class="tip" id="660">
+            <strong>Signature:</strong> inputName:string -&gt; DfComponent -&gt; string -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1326-1326" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Connects two pipeline components</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '661', 661)" onmouseover="showTip(event, '661', 661)">
+            connect_input_by_name inputName
+          </code>
+          <div class="tip" id="661">
+            <strong>Signature:</strong> inputName:string -&gt; string -&gt; string -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1328-1328" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Connects two pipeline components</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '662', 662)" onmouseover="showTip(event, '662', 662)">
+            create name adapters
+          </code>
+          <div class="tip" id="662">
+            <strong>Signature:</strong> name:string -&gt; adapters:(DfComponent -&gt; DfComponent) list -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1282-1282" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Create a new instance of a Union All pipeline component and then apply a series of transformations</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '663', 663)" onmouseover="showTip(event, '663', 663)">
+            define_column (...)
+          </code>
+          <div class="tip" id="663">
+            <strong>Signature:</strong> columnName:string -&gt; dataType:DfDataType -&gt; sourceColumnMappings:(string * DfInputColumnReference) list -&gt; DfUnionAllColumn<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1335-1335" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Construct a new output column definition</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '664', 664)" onmouseover="showTip(event, '664', 664)">
+            define_common_columns (...)
+          </code>
+          <div class="tip" id="664">
+            <strong>Signature:</strong> inputs:string list -&gt; columnsAndMappings:(DfInputColumnReference * DfDataType) list -&gt; DfUnionAllColumn list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1344-1344" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Construct a new output column definition using the same source column reference for multiple inputs</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '665', 665)" onmouseover="showTip(event, '665', 665)">
+            disconnect_all_inputs 
+          </code>
+          <div class="tip" id="665">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1332-1332" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Removes all input connections</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '666', 666)" onmouseover="showTip(event, '666', 666)">
+            disconnect_input inputName
+          </code>
+          <div class="tip" id="666">
+            <strong>Signature:</strong> inputName:String -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1330-1330" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Removes the connection, if any</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '667', 667)" onmouseover="showTip(event, '667', 667)">
+            ensure_inputs_and_outputs c
+          </code>
+          <div class="tip" id="667">
+            <strong>Signature:</strong> c:DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1307-1307" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Ensures that the component inputs and output columns match the specification of columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '668', 668)" onmouseover="showTip(event, '668', 668)">
+            get 
+          </code>
+          <div class="tip" id="668">
+            <strong>Signature:</strong> DfComponent -&gt; DfUnionAllConfiguration<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1274-1274" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Alias for ingress</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '669', 669)" onmouseover="showTip(event, '669', 669)">
+            get_columns 
+          </code>
+          <div class="tip" id="669">
+            <strong>Signature:</strong> DfComponent -&gt; DfUnionAllColumn list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1304-1304" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the output columns</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '670', 670)" onmouseover="showTip(event, '670', 670)">
+            input_name_printer 
+          </code>
+          <div class="tip" id="670">
+            <strong>Signature:</strong> int -&gt; string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1277-1277" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>String printer for deriving input names from an index</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '671', 671)" onmouseover="showTip(event, '671', 671)">
+            output_name 
+          </code>
+          <div class="tip" id="671">
+            <strong>Signature:</strong> string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1279-1279" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Defined name of the Union All output. Has to match SSIS internals.</p>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <script type="text/javascript" src="/chimayo/content/tips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>

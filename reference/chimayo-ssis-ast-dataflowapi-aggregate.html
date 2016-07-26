@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aggregate - Chimayo.Ssis</title>
+    <meta name="description" content=""/>
+    <meta name="author" content="Chimayo community"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="/chimayo/content/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Chimayo.Ssis</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/chimayo/index.html">Home</a></li>
+                      <li><a href="/chimayo/license.html">License</a></li>
+                      <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                      <li><a href="http://nuget.org/packages/Chimayo.Ssis">Get it from NuGet</a></li>
+                      <li><a href="http://github.com/chimayo/chimayo">View it on GitHub</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <div class="container">
+        
+
+
+
+<h1>Aggregate</h1>
+<p>
+  <span>Namespace: Chimayo.Ssis.Ast.DataFlowApi</span><br />
+</p>
+<div class="xmldoc">
+<p>API for creating and manipulating Aggregate pipeline components</p>
+
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '413', 413)" onmouseover="showTip(event, '413', 413)">
+            add_aggregation value c
+          </code>
+          <div class="tip" id="413">
+            <strong>Signature:</strong> value:DfAggregateAggregation -&gt; c:DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1104-1104" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Add an aggregation to the pipeline component</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '414', 414)" onmouseover="showTip(event, '414', 414)">
+            add_aggregations 
+          </code>
+          <div class="tip" id="414">
+            <strong>Signature:</strong> DfAggregateAggregation list -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1119-1119" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Add multiple aggregations to the pipeline component</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '415', 415)" onmouseover="showTip(event, '415', 415)">
+            clear_aggregations 
+          </code>
+          <div class="tip" id="415">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1121-1121" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Remove all aggregations from the pipeline component</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '416', 416)" onmouseover="showTip(event, '416', 416)">
+            connect_input 
+          </code>
+          <div class="tip" id="416">
+            <strong>Signature:</strong> DfComponent -&gt; string -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1140-1140" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Connects two pipeline components</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '417', 417)" onmouseover="showTip(event, '417', 417)">
+            connect_input_by_name 
+          </code>
+          <div class="tip" id="417">
+            <strong>Signature:</strong> string -&gt; string -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1142-1142" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Connects two pipeline components</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '418', 418)" onmouseover="showTip(event, '418', 418)">
+            create name adapters
+          </code>
+          <div class="tip" id="418">
+            <strong>Signature:</strong> name:string -&gt; adapters:(DfComponent -&gt; DfComponent) list -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1080-1080" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Create a new instance of an Aggregate pipeline component and then apply a series of transformations</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '419', 419)" onmouseover="showTip(event, '419', 419)">
+            define_aggregation (...)
+          </code>
+          <div class="tip" id="419">
+            <strong>Signature:</strong> outputName:string -&gt; (DfAggregateScaling * int option) -&gt; columns:DfAggregateColumn list -&gt; DfAggregateAggregation<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1147-1147" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Construct a new aggregation output</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '420', 420)" onmouseover="showTip(event, '420', 420)">
+            define_mapped_column (...)
+          </code>
+          <div class="tip" id="420">
+            <strong>Signature:</strong> name:string -&gt; dataType:DfDataType -&gt; sourceComponent:string -&gt; sourceOutput:string -&gt; sourceColumn:string -&gt; logic:DfAggregateOperation -&gt; DfAggregateColumn<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1155-1155" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Construct a new aggregation output column that operates over a source column</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '421', 421)" onmouseover="showTip(event, '421', 421)">
+            define_unmapped_column (...)
+          </code>
+          <div class="tip" id="421">
+            <strong>Signature:</strong> name:string -&gt; dataType:DfDataType -&gt; logic:DfAggregateOperation -&gt; DfAggregateColumn<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1164-1164" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Construct a new aggregation output column that operates without a source column (i.e. count all)</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '422', 422)" onmouseover="showTip(event, '422', 422)">
+            disconnect_input 
+          </code>
+          <div class="tip" id="422">
+            <strong>Signature:</strong> DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1144-1144" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Removes the connection, if any</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '423', 423)" onmouseover="showTip(event, '423', 423)">
+            get 
+          </code>
+          <div class="tip" id="423">
+            <strong>Signature:</strong> DfComponent -&gt; DfAggregateConfiguration<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1074-1074" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Alias for ingress</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '424', 424)" onmouseover="showTip(event, '424', 424)">
+            get_aggregations 
+          </code>
+          <div class="tip" id="424">
+            <strong>Signature:</strong> DfComponent -&gt; DfAggregateAggregation list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1123-1123" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the aggregations</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '425', 425)" onmouseover="showTip(event, '425', 425)">
+            get_auto_extend_factor 
+          </code>
+          <div class="tip" id="425">
+            <strong>Signature:</strong> DfComponent -&gt; int<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1130-1130" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the auto extend factor</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '426', 426)" onmouseover="showTip(event, '426', 426)">
+            get_count_distinct_scaling 
+          </code>
+          <div class="tip" id="426">
+            <strong>Signature:</strong> DfComponent -&gt; DfAggregateScalingValue<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1128-1128" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the Count Distinct scaling</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '427', 427)" onmouseover="showTip(event, '427', 427)">
+            get_key_scaling 
+          </code>
+          <div class="tip" id="427">
+            <strong>Signature:</strong> DfComponent -&gt; DfAggregateScalingValue<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1126-1126" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Get the Key scaling</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '428', 428)" onmouseover="showTip(event, '428', 428)">
+            input_name 
+          </code>
+          <div class="tip" id="428">
+            <strong>Signature:</strong> string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1077-1077" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Defined name of the Aggregate input. Has to match SSIS internals.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '429', 429)" onmouseover="showTip(event, '429', 429)">
+            set_auto_extend_factor value
+          </code>
+          <div class="tip" id="429">
+            <strong>Signature:</strong> value:int -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1137-1137" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the auto extend factor</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '430', 430)" onmouseover="showTip(event, '430', 430)">
+            set_count_distinct_scaling (arg1, arg2)
+          </code>
+          <div class="tip" id="430">
+            <strong>Signature:</strong> (DfAggregateScaling * int option) -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1135-1135" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the Count Distinct scaling</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '431', 431)" onmouseover="showTip(event, '431', 431)">
+            set_key_scaling (arg1, arg2)
+          </code>
+          <div class="tip" id="431">
+            <strong>Signature:</strong> (DfAggregateScaling * int option) -&gt; DfComponent -&gt; DfComponent<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/chimayo/chimayo/tree/master/src/Chimayo.Ssis.Ast/PipelineApi.fs#L1133-1133" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Set the Key scaling</p>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <script type="text/javascript" src="/chimayo/content/tips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>
