@@ -1,6 +1,0 @@
-FRAMEWORK: >= NET46
-NUGET
-  remote: http://api.nuget.org/v3/index.json
-    FParsec (1.0.2)
-    FSharp.Compiler.Service (2.0.0.6)
-    FSharp.Core (4.0.0.1)

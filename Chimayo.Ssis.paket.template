@@ -1,0 +1,85 @@
+type file
+id Chimayo.Ssis
+version 0.1.0
+authors Chimayo community
+owners Chimayo community
+description
+    Chimayo is a library for creating and manipulating SQL Server Integration Services packages with F# code.
+    
+    Chimayo provides a completely different development experience for producing SSIS packages that fits with modern software development:
+    
+    * Write code, not a custom DSL, and benefit from refactoring, compile-time testing, test automation and reuse
+    * Generate SSIS packages that work well in version control systems, such as Git, or just keep the F# code and generate them on demand
+    * Benefit from functional programming with pattern matching, immutable data structures and strong typing
+    
+    Chimayo is not object-oriented software and is designed to be consumed directly from F#.
+    
+    Chimayo also provides a command line tool that can be used to convert between supported SSIS formats.
+summary
+    Chimayo is a library for creating and manipulating SQL Server Integration Services packages with F# code.
+licenseUrl https://github.com/chimayo/chimayo/tree/master/LICENSE.txt
+projectUrl https://github.com/chimayo/chimayo/
+iconUrl https://avatars2.githubusercontent.com/u/17707486?v=3&s=64
+copyright
+    Copyright 2016 The Chimayo project contributors.
+requireLicenseAcceptance true
+tags SSIS F# SQLServer
+
+files
+    src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.dll ==> lib\net46
+    src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.pdb ==> lib\net46
+    src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.xml ==> lib\net46
+    src/Chimayo.Ssis.CodeGen/bin/Release/Chimayo.Ssis.CodeGen.dll ==> lib\net46
+    src/Chimayo.Ssis.CodeGen/bin/Release/Chimayo.Ssis.CodeGen.pdb ==> lib\net46
+    src/Chimayo.Ssis.CodeGen/bin/Release/Chimayo.Ssis.CodeGen.xml ==> lib\net46
+    src/Chimayo.Ssis.Common/bin/Release/Chimayo.Ssis.Common.dll ==> lib\net46
+    src/Chimayo.Ssis.Common/bin/Release/Chimayo.Ssis.Common.pdb ==> lib\net46
+	src/Chimayo.Ssis.Common/bin/Release/Chimayo.Ssis.Common.xml ==> lib\net46
+    src/Chimayo.Ssis.Xml/bin/Release/Chimayo.Ssis.Xml.dll ==> lib\net46
+    src/Chimayo.Ssis.Xml/bin/Release/Chimayo.Ssis.Xml.pdb ==> lib\net46
+    src/Chimayo.Ssis.Xml/bin/Release/Chimayo.Ssis.Xml.xml ==> lib\net46
+    src/Chimayo.Ssis.Reader2008/bin/Release/Chimayo.Ssis.Reader2008.dll ==> lib\net46
+    src/Chimayo.Ssis.Reader2008/bin/Release/Chimayo.Ssis.Reader2008.pdb ==> lib\net46
+    src/Chimayo.Ssis.Reader2008/bin/Release/Chimayo.Ssis.Reader2008.xml ==> lib\net46
+    src/Chimayo.Ssis.Writer2012/bin/Release/Chimayo.Ssis.Writer2012.dll ==> lib\net46
+    src/Chimayo.Ssis.Writer2012/bin/Release/Chimayo.Ssis.Writer2012.pdb ==> lib\net46
+    src/Chimayo.Ssis.Writer2012/bin/Release/Chimayo.Ssis.Writer2012.xml ==> lib\net46
+    src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.dll ==> lib\net46
+    src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.pdb ==> lib\net46
+    src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.xml ==> lib\net46
+	src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.dll ==> tools
+    src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.pdb ==> tools
+    src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.xml ==> tools
+    src/Chimayo.Ssis.CodeGen/bin/Release/Chimayo.Ssis.CodeGen.dll ==> tools
+    src/Chimayo.Ssis.CodeGen/bin/Release/Chimayo.Ssis.CodeGen.pdb ==> tools
+    src/Chimayo.Ssis.CodeGen/bin/Release/Chimayo.Ssis.CodeGen.xml ==> tools
+    src/Chimayo.Ssis.Common/bin/Release/Chimayo.Ssis.Common.dll ==> tools
+    src/Chimayo.Ssis.Common/bin/Release/Chimayo.Ssis.Common.pdb ==> tools
+	src/Chimayo.Ssis.Common/bin/Release/Chimayo.Ssis.Common.xml ==> tools
+    src/Chimayo.Ssis.Xml/bin/Release/Chimayo.Ssis.Xml.dll ==> tools
+    src/Chimayo.Ssis.Xml/bin/Release/Chimayo.Ssis.Xml.pdb ==> tools
+    src/Chimayo.Ssis.Xml/bin/Release/Chimayo.Ssis.Xml.xml ==> tools
+    src/Chimayo.Ssis.Reader2008/bin/Release/Chimayo.Ssis.Reader2008.dll ==> tools
+    src/Chimayo.Ssis.Reader2008/bin/Release/Chimayo.Ssis.Reader2008.pdb ==> tools
+    src/Chimayo.Ssis.Reader2008/bin/Release/Chimayo.Ssis.Reader2008.xml ==> tools
+    src/Chimayo.Ssis.Writer2012/bin/Release/Chimayo.Ssis.Writer2012.dll ==> tools
+    src/Chimayo.Ssis.Writer2012/bin/Release/Chimayo.Ssis.Writer2012.pdb ==> tools
+    src/Chimayo.Ssis.Writer2012/bin/Release/Chimayo.Ssis.Writer2012.xml ==> tools
+    src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.dll ==> tools
+    src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.pdb ==> tools
+    src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.xml ==> tools
+	src/Chimayo.Ssis.CommandLine/bin/Release/Chimayo.Ssis.CommandLine.exe ==> tools
+    src/Chimayo.Ssis.CommandLine/bin/Release/Chimayo.Ssis.CommandLine.pdb ==> tools
+    src/Chimayo.Ssis.CommandLine/bin/Release/Chimayo.Ssis.CommandLine.xml ==> tools
+	packages/FParsec/lib/net40-client/* ==> tools
+	packages/FSharp.Compiler.Service/lib/net40/* ==> tools
+	packages/FSharp.Core/lib/net40/* ==> tools
+	NOTICE ==> tools
+	LICENSE.txt ==> tools
+
+frameworkAssemblies
+    System.Xml
+
+dependencies
+    FSharp.Core ~> LOCKEDVERSION
+    FParsec ~> LOCKEDVERSION
