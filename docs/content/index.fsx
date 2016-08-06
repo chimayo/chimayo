@@ -19,6 +19,13 @@ Chimayo is not object-oriented software and is designed to be consumed directly 
     
 Chimayo also provides a command line tool that can be used to convert between supported SSIS formats.
 
+Depending on what you want to do, you may wish to look at one of the following, or use the navigation above:
+
+* [Introduction](intro.html)
+* [Features](features/index.html)
+* [Getting started](gettingstarted.html)
+* [API Reference](reference/index.html)
+
 License
 -------
 
@@ -30,17 +37,7 @@ Read the [license][license] for more details.
 Contributing
 ------------
 
-  [gh]: https://github.com/chimayo/chimayo
-  [issues]: https://github.com/chimayo/chimayo/issues
-  [license]: https://github.com/chimayo/chimayo/blob/master/LICENSE.txt
-
-The Chimayo source code is on [GitHub][gh] and [issues][issues] are also tracked there.
-
-I welcome community involvement, it's the main reason for putting this code in the public domain. However, before
-opening to new features and enhancements, my focus is to put the supporting materials in place, such as this
-website, documentation, examples and regression tests.
-
-There is an [API Reference](reference/index.html) for those ready to dive in.
+See [contributing](contributing.html).
 
 *)
 
