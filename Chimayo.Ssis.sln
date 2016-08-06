@@ -32,6 +32,23 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Tests", "tests
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.TestHarness", "tests\Chimayo.Ssis.TestHarness\Chimayo.Ssis.TestHarness.fsproj", "{47502294-AA38-43A5-99D3-43350789E8F2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{1F6BFA2A-7AE5-4492-B1B2-4A3F11C81027}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{271C7FD6-C386-46C4-BEB2-6256F0855301}"
+	ProjectSection(SolutionItems) = preProject
+		docs\content\contributing.md = docs\content\contributing.md
+		docs\content\gettingstarted.md = docs\content\gettingstarted.md
+		docs\content\index.fsx = docs\content\index.fsx
+		docs\content\intro.md = docs\content\intro.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{8692FB35-BDDE-444B-B4D3-2AAE7D03C772}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{6F1E99D9-A061-422D-94CD-BC1918F99D48}"
+	ProjectSection(SolutionItems) = preProject
+		docs\tools\templates\template.cshtml = docs\tools\templates\template.cshtml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,5 +110,8 @@ Global
 		{2C76B4ED-F9F8-44E2-BE14-32F732D8C5A2} = {3EBA8B9D-5648-4A58-86C7-33091C98DB8F}
 		{C6581D86-EC9F-4B76-B442-8A57BC5B86FC} = {B0B65E19-6B60-4C1E-BFC4-89EDC0C58C02}
 		{47502294-AA38-43A5-99D3-43350789E8F2} = {B0B65E19-6B60-4C1E-BFC4-89EDC0C58C02}
+		{271C7FD6-C386-46C4-BEB2-6256F0855301} = {1F6BFA2A-7AE5-4492-B1B2-4A3F11C81027}
+		{8692FB35-BDDE-444B-B4D3-2AAE7D03C772} = {1F6BFA2A-7AE5-4492-B1B2-4A3F11C81027}
+		{6F1E99D9-A061-422D-94CD-BC1918F99D48} = {8692FB35-BDDE-444B-B4D3-2AAE7D03C772}
 	EndGlobalSection
 EndGlobal
