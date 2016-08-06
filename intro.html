@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction
+</title>
+    <meta name="description" content="Chimayo is a library for creating and manipulating SQL Server Integration Services packages with F# code."/>
+    <meta name="author" content="Chimayo community"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="/chimayo/content/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Chimayo.Ssis</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/chimayo/index.html">Home</a></li>
+                      <li><a href="/chimayo/license.html">License</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="/chimayo/intro.html">Introduction</a></li>
+                              <li><a href="/chimayo/gettingstarted.html">Getting started</a></li>
+                              <li><a href="/chimayo/features/index.html">Features</a></li>
+                              <li><a href="/chimayo/contributing.html">Contributing</a></li>
+                              <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                      <li><a href="http://nuget.org/packages/Chimayo.Ssis">Get it from NuGet</a></li>
+                      <li><a href="http://github.com/chimayo/chimayo">View it on GitHub</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <div class="container">
+        
+<h1><a name="Introduction" class="anchor" href="#Introduction">Introduction</a></h1>
+<p>Chimayo SSIS was conceived as a way to reduce the complexity
+of a hundred SSIS packages operating and being maintained for
+a single product.</p>
+<p>I had looked at the market and didn't find anything that really
+met the goals I had in mind:</p>
+<ul>
+<li>No more XML in source control. Too many issues merging changes</li>
+<li>
+Programmatic generation of content and support for higher-level constructs
+<ul>
+<li>Refactoring</li>
+<li>Reuse</li>
+<li>Regression testing</li>
+<li>Higher-level coding: parallelism, object graphs</li>
+</ul>
+</li>
+<li>Translation from SSIS 2008 R2 to SSIS 2012</li>
+</ul>
+<h2><a name="Why-not-use-BIML" class="anchor" href="#Why-not-use-BIML">Why not use BIML?</a></h2>
+<p>BIML, BIMLScript and the BIML API are robust offerings for SSIS development,
+but they weren't a good fit for my needs. I was looking for a much richer
+development experience than working with XML and ASP/PHP-style scripting.
+I wanted a functional-first experience with immutable data types, pattern
+matching and compile-time syntax checking.</p>
+<p>The BIML API gives a bit more in this direction, but without immutable data
+structures and with an object-oriented approach, it wasn't what I was after.</p>
+<p>If BIML, BIMLScript or the BIML API work for you, then don't change to Chimayo.
+They are mature, well-supported and cover far more features than this project
+is likely to ever support.</p>
+<h2><a name="Why-F" class="anchor" href="#Why-F">Why F#?</a></h2>
+<p>Functional programming languages excel at data transformation, and F# is a
+great functional programming language. Code in F# is generally much more
+readable than in other .NET languages, supports higher level constructs much
+more simply and has direct support for higher-order processing with pattern
+matching, discriminated unions, type inference and function composition.</p>
+<h2><a name="Why-Chimayo" class="anchor" href="#Why-Chimayo">Why Chimayo?</a></h2>
+<p>Chimayo links two of my likes: spices and a local Belgian beer. What better reason
+could there be?</p>
+
+
+    </div>
+    <script type="text/javascript" src="/chimayo/content/tips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>

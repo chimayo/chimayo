@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features
+</title>
+    <meta name="description" content="Chimayo is a library for creating and manipulating SQL Server Integration Services packages with F# code."/>
+    <meta name="author" content="Chimayo community"/>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link type="text/css" rel="stylesheet" href="/chimayo/content/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Chimayo.Ssis</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="/chimayo/index.html">Home</a></li>
+                      <li><a href="/chimayo/license.html">License</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Documentation<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="/chimayo/intro.html">Introduction</a></li>
+                              <li><a href="/chimayo/gettingstarted.html">Getting started</a></li>
+                              <li><a href="/chimayo/features/index.html">Features</a></li>
+                              <li><a href="/chimayo/contributing.html">Contributing</a></li>
+                              <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="/chimayo/reference/index.html">API Reference</a></li>
+                      <li><a href="http://nuget.org/packages/Chimayo.Ssis">Get it from NuGet</a></li>
+                      <li><a href="http://github.com/chimayo/chimayo">View it on GitHub</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <div class="container">
+        
+<h1><a name="Features" class="anchor" href="#Features">Features</a></h1>
+<h2><a name="SQL-Server-support" class="anchor" href="#SQL-Server-support">SQL Server support</a></h2>
+<p>Current SQL Server support is shown below:</p>
+<div class="panel panel-default">
+<table class="table">
+<tr><th>SQL Server version</th><th>Read</th><th>Write</th><th>Execute</th></tr>
+<tr><th>2008 R2</th><td>Yes</td><td>No</td><td>No</td></tr>
+<tr><th>2012</th><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr><th>2014</th><td>No</td><td>No</td><td>Yes</td></tr>
+<tr><th>2016</th><td>No</td><td>No</td><td>Yes</td></tr>
+</trow>
+</table>
+</div>
+<p>The internal IDs used by different versions of SQL Server change and so it is not currently
+possible to read or write packages produced by unsupported versions of SQL Server. Nevertheless,
+the package formats are very similar and earlier package versions can be run by later versions of
+SQL Server.</p>
+<p>Full support for SQL Server 2014 and 2016 is on the roadmap. Delivery will depend very much on the
+interest from the community to help deliver these features.</p>
+<h2><a name="SSIS-feature-support" class="anchor" href="#SSIS-feature-support">SSIS feature support</a></h2>
+<p>Chimayo SSIS has been designed to support the entire feature set of SQL Server Integration Services,
+but not all features are currently implemented.</p>
+<h3><a name="Unsupported" class="anchor" href="#Unsupported">Unsupported</a></h3>
+<ul>
+<li>Event handlers</li>
+<li>.NET scripting</li>
+<li>Thirdy-party components</li>
+<li>SQL Server Analysis Services</li>
+</ul>
+<h3><a name="General-features" class="anchor" href="#General-features">General features</a></h3>
+<ul>
+<li>Package configurations</li>
+<li>
+Connection managers
+<ul>
+<li>OleDB</li>
+<li>ADO.NET</li>
+<li>File</li>
+<li>Flat file</li>
+</ul>
+</li>
+<li>Logging</li>
+<li>Variables</li>
+<li>Expressions</li>
+</ul>
+<h3><a name="Control-flow" class="anchor" href="#Control-flow">Control flow</a></h3>
+<ul>
+<li>Precedence constraints</li>
+<li>Execute SQL task</li>
+<li>Execute package task</li>
+<li>Execute process task</li>
+<li>Expression task</li>
+<li>Sequence task</li>
+<li>ForLoop task</li>
+<li>ForEachLoop task</li>
+<li>Pipeline task (data flow)</li>
+</ul>
+<h3><a name="Data-flow" class="anchor" href="#Data-flow">Data flow</a></h3>
+<ul>
+<li>
+Sources
+<ul>
+<li>Flat file source</li>
+<li>OleDB source</li>
+<li>XML source</li>
+</ul>
+</li>
+<li>
+Transforms
+<ul>
+<li>Aggregate</li>
+<li>Conditional split</li>
+<li>Derived column</li>
+<li>Lookup</li>
+<li>Multicast</li>
+<li>Row count</li>
+<li>Union all</li>
+</ul>
+</li>
+<li>
+Destinations
+<ul>
+<li>OleDB destination</li>
+<li>Recordset destination</li>
+</ul>
+</li>
+</ul>
+<h2><a name="Chimayo-SSIS-features" class="anchor" href="#Chimayo-SSIS-features">Chimayo SSIS features</a></h2>
+<ul>
+<li>SQL Server 2008 R2 Integration Services package reader</li>
+<li>SQL Server 2012 Integration Services package reader</li>
+<li>SQL Server 2012 Integration Services package writer</li>
+<li>Package normalisation</li>
+<li>Package transforms</li>
+<li>F# code generation</li>
+<li>Idempotent round-tripping</li>
+<li>Package validation</li>
+</ul>
+
+
+    </div>
+    <script type="text/javascript" src="/chimayo/content/tips.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+  </html>
