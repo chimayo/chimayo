@@ -20,7 +20,11 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Reader2008", "
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Reader2012", "src\Chimayo.Ssis.Reader2012\Chimayo.Ssis.Reader2012.fsproj", "{EADD330A-7E9F-4EB0-A3BE-613BD33DA079}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Reader2016", "src\Chimayo.Ssis.Reader2016\Chimayo.Ssis.Reader2016.fsproj", "{F0BF015A-F9B0-43AC-A2AA-DD7AB24A299B}"
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Writer2012", "src\Chimayo.Ssis.Writer2012\Chimayo.Ssis.Writer2012.fsproj", "{EE3ACFE7-BC03-4961-949B-10CD3B99A162}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Writer2016", "src\Chimayo.Ssis.Writer2016\Chimayo.Ssis.Writer2016.fsproj", "{E36552A2-0A5A-4C3A-8624-C7DF1CDA6229}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.CommandLine", "src\Chimayo.Ssis.CommandLine\Chimayo.Ssis.CommandLine.fsproj", "{2C76B4ED-F9F8-44E2-BE14-32F732D8C5A2}"
 EndProject
@@ -48,10 +52,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{
 	ProjectSection(SolutionItems) = preProject
 		docs\tools\templates\template.cshtml = docs\tools\templates\template.cshtml
 	EndProjectSection
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Writer2016", "Chimayo.Ssis.Writer2016\Chimayo.Ssis.Writer2016.fsproj", "{E36552A2-0A5A-4C3A-8624-C7DF1CDA6229}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Reader2016", "Chimayo.Ssis.Reader2016\Chimayo.Ssis.Reader2016.fsproj", "{F0BF015A-F9B0-43AC-A2AA-DD7AB24A299B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
