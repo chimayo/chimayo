@@ -47,6 +47,7 @@ module Parser =
         (
                 (attempt (skipString "2008" >>% Ssis2008))
             <|> (attempt (skipString "2012" >>% Ssis2012))
+            <|> (attempt (skipString "2016" >>% Ssis2016))
         )
         .>> endOfArgument
 
@@ -63,7 +64,7 @@ module Parser =
         let optionalVersion =
             FParsec.Primitives.opt 
                 (parseInputVersion .>> CharParsers.newline |>> function RunOptionTokens.InputVersion x -> x | _ -> failwith "unexpected") 
-              |>> optionOrDefault Ssis2012
+              |>> optionOrDefault Ssis2016
         let filename = parseInputFile |>> function RunOptionTokens.InputFile x -> x | _ -> failwith "unexpected"
         skipStringCI "/compare" 
         >>.  CharParsers.newline
@@ -167,13 +168,13 @@ let processArguments (argumentTokens : RunOptionTokens list) =
     let iv = 
         argumentTokens 
         |> List.tryFind (function | RunOptionTokens.InputVersion _ -> true | _ -> false) 
-        |> Option.map (function RunOptionTokens.InputVersion x -> x | _ -> Ssis2012)
-        |> optionOrDefault Ssis2012
+        |> Option.map (function RunOptionTokens.InputVersion x -> x | _ -> Ssis2016)
+        |> optionOrDefault Ssis2016
     let ov = 
         argumentTokens 
         |> List.tryFind (function | RunOptionTokens.OutputVersion _ -> true | _ -> false) 
-        |> Option.map (function RunOptionTokens.OutputVersion x -> x | _ -> Ssis2012)
-        |> optionOrDefault Ssis2012
+        |> Option.map (function RunOptionTokens.OutputVersion x -> x | _ -> Ssis2016)
+        |> optionOrDefault Ssis2016
     let ns =
         argumentTokens
         |> List.tryFind (function | RunOptionTokens.TargetNamespace _ -> true | _ -> false)

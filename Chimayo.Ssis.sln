@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{CC7E32DD-D3E7-4B1B-AF7D-C5C4646BE2EB}"
 	ProjectSection(SolutionItems) = preProject
@@ -49,6 +49,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{
 		docs\tools\templates\template.cshtml = docs\tools\templates\template.cshtml
 	EndProjectSection
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Writer2016", "Chimayo.Ssis.Writer2016\Chimayo.Ssis.Writer2016.fsproj", "{E36552A2-0A5A-4C3A-8624-C7DF1CDA6229}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Chimayo.Ssis.Reader2016", "Chimayo.Ssis.Reader2016\Chimayo.Ssis.Reader2016.fsproj", "{F0BF015A-F9B0-43AC-A2AA-DD7AB24A299B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +99,14 @@ Global
 		{47502294-AA38-43A5-99D3-43350789E8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47502294-AA38-43A5-99D3-43350789E8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47502294-AA38-43A5-99D3-43350789E8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36552A2-0A5A-4C3A-8624-C7DF1CDA6229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36552A2-0A5A-4C3A-8624-C7DF1CDA6229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36552A2-0A5A-4C3A-8624-C7DF1CDA6229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36552A2-0A5A-4C3A-8624-C7DF1CDA6229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0BF015A-F9B0-43AC-A2AA-DD7AB24A299B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0BF015A-F9B0-43AC-A2AA-DD7AB24A299B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0BF015A-F9B0-43AC-A2AA-DD7AB24A299B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0BF015A-F9B0-43AC-A2AA-DD7AB24A299B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,5 +125,10 @@ Global
 		{271C7FD6-C386-46C4-BEB2-6256F0855301} = {1F6BFA2A-7AE5-4492-B1B2-4A3F11C81027}
 		{8692FB35-BDDE-444B-B4D3-2AAE7D03C772} = {1F6BFA2A-7AE5-4492-B1B2-4A3F11C81027}
 		{6F1E99D9-A061-422D-94CD-BC1918F99D48} = {8692FB35-BDDE-444B-B4D3-2AAE7D03C772}
+		{E36552A2-0A5A-4C3A-8624-C7DF1CDA6229} = {3EBA8B9D-5648-4A58-86C7-33091C98DB8F}
+		{F0BF015A-F9B0-43AC-A2AA-DD7AB24A299B} = {3EBA8B9D-5648-4A58-86C7-33091C98DB8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22A46AAC-91B4-4BC9-ABD7-B9D1213BDBF4}
 	EndGlobalSection
 EndGlobal
