@@ -97,7 +97,7 @@ let buildPackage registrations (pkg:CftPackage) =
                 createDtsElement "Executable"
                 |> XmlElement.setContent
                         [
-                            yield createDtsPropertyElement "PackageFormatVersion" "6"
+                            yield createDtsPropertyElement "PackageFormatVersion" "8"
                             yield cms
                             yield configs
                             yield lps
