@@ -93,9 +93,19 @@
       <Project>{eadd330a-7e9f-4eb0-a3be-613bd33da079}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\..\src\Chimayo.Ssis.Reader2016\Chimayo.Ssis.Reader2016.fsproj">
+      <Name>Chimayo.Ssis.Reader2016</Name>
+      <Project>{f0bf015a-f9b0-43ac-a2aa-dd7ab24a299b}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\Chimayo.Ssis.Writer2012\Chimayo.Ssis.Writer2012.fsproj">
       <Name>Chimayo.Ssis.Writer2012</Name>
       <Project>{ee3acfe7-bc03-4961-949b-10cd3b99a162}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Chimayo.Ssis.Writer2016\Chimayo.Ssis.Writer2016.fsproj">
+      <Name>Chimayo.Ssis.Writer2016</Name>
+      <Project>{e36552a2-0a5a-4c3a-8624-c7df1cda6229}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\src\Chimayo.Ssis.Xml\Chimayo.Ssis.Xml.fsproj">
