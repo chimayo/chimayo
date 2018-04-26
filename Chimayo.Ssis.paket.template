@@ -47,6 +47,12 @@ files
     src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.dll ==> lib\net46
     src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.pdb ==> lib\net46
     src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.xml ==> lib\net46
+	src/Chimayo.Ssis.Writer2016/bin/Release/Chimayo.Ssis.Writer2016.dll ==> lib\net46
+    src/Chimayo.Ssis.Writer2016/bin/Release/Chimayo.Ssis.Writer2016.pdb ==> lib\net46
+    src/Chimayo.Ssis.Writer2016/bin/Release/Chimayo.Ssis.Writer2016.xml ==> lib\net46
+    src/Chimayo.Ssis.Reader2016/bin/Release/Chimayo.Ssis.Reader2016.dll ==> lib\net46
+    src/Chimayo.Ssis.Reader2016/bin/Release/Chimayo.Ssis.Reader2016.pdb ==> lib\net46
+    src/Chimayo.Ssis.Reader2016/bin/Release/Chimayo.Ssis.Reader2016.xml ==> lib\net46
 	src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.dll ==> tools
     src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.pdb ==> tools
     src/Chimayo.Ssis.Ast/bin/Release/Chimayo.Ssis.Ast.xml ==> tools
@@ -68,6 +74,12 @@ files
     src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.dll ==> tools
     src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.pdb ==> tools
     src/Chimayo.Ssis.Reader2012/bin/Release/Chimayo.Ssis.Reader2012.xml ==> tools
+	src/Chimayo.Ssis.Writer2016/bin/Release/Chimayo.Ssis.Writer2016.dll ==> tools
+    src/Chimayo.Ssis.Writer2016/bin/Release/Chimayo.Ssis.Writer2016.pdb ==> tools
+    src/Chimayo.Ssis.Writer2016/bin/Release/Chimayo.Ssis.Writer2016.xml ==> tools
+    src/Chimayo.Ssis.Reader2016/bin/Release/Chimayo.Ssis.Reader2016.dll ==> tools
+    src/Chimayo.Ssis.Reader2016/bin/Release/Chimayo.Ssis.Reader2016.pdb ==> tools
+    src/Chimayo.Ssis.Reader2016/bin/Release/Chimayo.Ssis.Reader2016.xml ==> tools
 	src/Chimayo.Ssis.CommandLine/bin/Release/Chimayo.Ssis.CommandLine.exe ==> tools
 	src/Chimayo.Ssis.CommandLine/bin/Release/Chimayo.Ssis.CommandLine.exe.config ==> tools
     src/Chimayo.Ssis.CommandLine/bin/Release/Chimayo.Ssis.CommandLine.pdb ==> tools
