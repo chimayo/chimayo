@@ -74,7 +74,6 @@ files
     src/Chimayo.Ssis.CommandLine/bin/Release/Chimayo.Ssis.CommandLine.xml ==> tools
 	packages/FParsec/lib/net40-client/* ==> tools
 	packages/FSharp.Compiler.Service/lib/net40/* ==> tools
-	packages/FSharp.Core/lib/net40/* ==> tools
 	NOTICE ==> tools
 	LICENSE.txt ==> tools
 
