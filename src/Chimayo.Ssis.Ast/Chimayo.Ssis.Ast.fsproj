@@ -33,36 +33,6 @@
     <WarningLevel>3</WarningLevel>
     <DocumentationFile>bin\Release\Chimayo.Ssis.Ast.XML</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Internals.fs" />
-    <Compile Include="CommonTypes.fs" />
-    <Compile Include="PipelineTypes.fs" />
-    <Compile Include="PipelineApi.fs" />
-    <Compile Include="ExecutableTasks.fs" />
-    <Compile Include="Package.fs" />
-    <Compile Include="UtilitiesModule.fs" />
-    <Compile Include="ConnectionManagersModule.fs" />
-    <Compile Include="ExecutablesModule.fs" />
-    <Compile Include="PackageModule.fs" />
-    <Compile Include="PackageNormaliser.fs" />
-    <Compile Include="PackageComparer.fs" />
-    <Compile Include="Transformation.fs" />
-    <Compile Include="PackageValidator.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Chimayo.Ssis.Common\Chimayo.Ssis.Common.fsproj">
-      <Name>Chimayo.Ssis.Common</Name>
-      <Project>{60de70be-5238-4684-9f41-af17495e93ba}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
@@ -87,6 +57,35 @@
   </Target>
   -->
   <Import Project="..\..\.paket\paket.targets" />
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Internals.fs" />
+    <Compile Include="CommonTypes.fs" />
+    <Compile Include="PipelineTypes.fs" />
+    <Compile Include="PipelineApi.fs" />
+    <Compile Include="ExecutableTasks.fs" />
+    <Compile Include="Package.fs" />
+    <Compile Include="UtilitiesModule.fs" />
+    <Compile Include="ConnectionManagersModule.fs" />
+    <Compile Include="ExecutablesModule.fs" />
+    <Compile Include="PackageModule.fs" />
+    <Compile Include="PackageNormaliser.fs" />
+    <Compile Include="PackageComparer.fs" />
+    <Compile Include="Transformation.fs" />
+    <Compile Include="PackageValidator.fs" />
+    <None Include="paket.references" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <ProjectReference Include="..\Chimayo.Ssis.Common\Chimayo.Ssis.Common.fsproj">
+      <Name>Chimayo.Ssis.Common</Name>
+      <Project>{60de70be-5238-4684-9f41-af17495e93ba}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2' Or $(TargetFrameworkVersion) == 'v4.6.3' Or $(TargetFrameworkVersion) == 'v4.7' Or $(TargetFrameworkVersion) == 'v4.7.1')">
       <ItemGroup>
