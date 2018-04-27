@@ -30,6 +30,8 @@ type CftPackage =
         delayValidation: bool
         disableEventHandlers: bool
 
+        parameters: pkParameter list
+
     }
     /// Default empty package
     static member Empty =
@@ -66,5 +68,7 @@ type CftPackage =
                                transactionOption = CfTransactionOption.Supported
                                delayValidation = false
                                disableEventHandlers = false
+
+                               parameters = []
                            }
 

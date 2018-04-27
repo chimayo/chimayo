@@ -4,11 +4,13 @@ open Chimayo.Ssis.CommandLine.Messages
 
 let reader version =
     match version with
+    | Ssis2016 -> Chimayo.Ssis.Reader2016.PackageReader.readFromString
     | Ssis2012 -> Chimayo.Ssis.Reader2012.PackageReader.readFromString
     | Ssis2008 -> Chimayo.Ssis.Reader2008.PackageReader.readFromString
 
 let writer version =
     match version with
+    | Ssis2016 -> Chimayo.Ssis.Writer2016.PackageBuilder.generate
     | Ssis2012 -> Chimayo.Ssis.Writer2012.PackageBuilder.generate
     | Ssis2008 -> argumentErrorMessage "SSIS 2008 package writing is not implemented"
 

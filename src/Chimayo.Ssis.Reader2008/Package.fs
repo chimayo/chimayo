@@ -33,4 +33,5 @@ let read (nav:NavigatorRec) : CftPackage =
         localeId = nav |> Extractions.localeId
         transactionOption = nav |> Extractions.transactionOption
         delayValidation = nav |> Extractions.delayValidation
+        parameters = []
     }

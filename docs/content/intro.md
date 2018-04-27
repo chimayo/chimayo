@@ -14,7 +14,8 @@ met the goals I had in mind:
   * Reuse
   * Regression testing
   * Higher-level coding: parallelism, object graphs
-* Translation from SSIS 2008 R2 to SSIS 2012
+  * Translation between SSIS 2008 R2, SSIS 2012 and SSIS 2016 (output in 
+		SSIS 2012 or 2016 only)
 
 Why not use BIML?
 -----------------

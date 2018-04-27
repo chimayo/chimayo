@@ -32,8 +32,8 @@ SQL Server Integration Services package transformations
     /validate [inputfile]                    - Validate package design
     /compare                                 - Compare two packages
         [/diff N]                              produces a diff style comparison with N context lines
-        [/iv {2008|2012}] inputfile            version and first input file
-        [/iv {2008|2012}] inputfile            version and second input file
+        [/iv {2008|2012|2016}] inputfile       version and first input file
+        [/iv {2008|2012|2016}] inputfile       version and second input file
     /version                                 - Show version information
     /? | /help | /h                          - Show this help
 
@@ -41,8 +41,8 @@ SQL Server Integration Services package transformations
 
     inputfile                                - Source filename (default: stdin)
     /o outputfile                            - Destination filename (default: stdout)
-    /iv {2008|2012}                          - SSIS version for input file
-    /ov {2008|2012}                          - SSIS version for output file and for roundtrip test
+    /iv {2008|2012|2016}                     - SSIS version for input file
+    /ov {2008|2012|2016}                     - SSIS version for output file and for roundtrip test
     /ns namespace                            - Specify target namespace for generated code (default: GeneratedPackages)
     /r                                       - Enable recursion in /roundtripall
     /keep                                    - Keeps original files in /roundtripall
@@ -103,7 +103,7 @@ let pkg =
 [<EntryPoint>]
 let main argv = 
     pkg
-    |> Chimayo.Ssis.Writer2012.PackageBuilder.toString
+    |> Chimayo.Ssis.Writer2016.PackageBuilder.toString
     |> printf "%s\n" 
     System.Console.ReadLine() |>ignore
     0
@@ -117,7 +117,7 @@ As with most F# programs, it is easiest to read this bottom-up.
 [<EntryPoint>]
 let main argv = 
     pkg
-    |> Chimayo.Ssis.Writer2012.PackageBuilder.toString
+    |> Chimayo.Ssis.Writer2016.PackageBuilder.toString
     |> printf "%s\n" 
     System.Console.ReadLine() |>ignore
     0
@@ -240,13 +240,14 @@ for the variety of precedence constraints supported by SSIS.
 Reveres engineer an existing package
 ------------------------------------
 
-So long as you have an existing SSIS 2008 R2 or SSIS 2012 package that conforms with
-the feature set supported by Chimayo, you can reverse engineer it into F# code, and
-then you can also inspect the CftPackage instance that's created.
+So long as you have an existing SSIS 2008 R2, SSIS 2012, or SSIS 2016 package that 
+conforms with the feature set supported by Chimayo, you can reverse engineer it 
+into F# code, and then you can also inspect the CftPackage instance that's created.
 
 Just use the command line tool as explained above, for example:
 
 ```
 Chimayo.Ssis.CommandLine.exe /codegen /iv 2008 MySsis2008Package.dtsx /o MySsis2008Package.fs
 Chimayo.Ssis.CommandLine.exe /codegen /iv 2012 MySsis2012Package.dtsx /o MySsis2012Package.fs
+Chimayo.Ssis.CommandLine.exe /codegen /iv 2016 MySsis2016Package.dtsx /o MySsis2016Package.fs
 ```

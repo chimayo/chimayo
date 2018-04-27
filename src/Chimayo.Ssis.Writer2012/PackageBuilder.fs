@@ -81,6 +81,7 @@ let buildPackage registrations (pkg:CftPackage) =
 
             let refId = "Package"
             let! cms = pkg.connectionManagers |> ConnectionManagers.buildConnectionManagers
+            let! ps = pkg.parameters |> DefaultElements.buildParameters ["Package"]
             let! vs = pkg.variables |> DefaultElements.buildVariables ["Package"]
             let es = pkg.propertyExpressions |> DefaultElements.buildExpressions
             let! exs = pkg.executables |> Executables.TopLevel.buildExecutables ["Package"]
@@ -101,6 +102,7 @@ let buildPackage registrations (pkg:CftPackage) =
                             yield cms
                             yield configs
                             yield lps
+                            yield ps
                             yield vs
                             yield lo
                             yield! es
