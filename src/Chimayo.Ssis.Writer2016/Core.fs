@@ -35,7 +35,6 @@ module RefIds =
 
     let getConnectionManagerRefId name = "Package.ConnectionManagers[" + name + "]"
     let getConnectionManagerIds = assignAndGetIds getConnectionManagerRefId
-
     let getVariableRefId parents (ns, name) = 
         sprintf "%s.Variables[%s::%s]" (System.String.Join("\\", List.rev (parents))) ns name
 
@@ -48,6 +47,20 @@ module RefIds =
             | Some x, _ -> return Some x
             | _, [] -> return None
             | _, p::ps -> return! tryGetVariableIdsRecurse ps (ns,name)
+                   }
+    
+    let getParameterRefId parents (ns, name) = 
+        sprintf "%s.Parameters[%s::%s]" (System.String.Join("\\", List.rev (parents))) ns name
+
+    let getParameterIds parents = assignAndGetIds (getParameterRefId parents)
+
+    let rec tryGetParameterIdsRecurse parents (ns,name) =
+        dtsIdState {
+            let! result = tryLookupId (getParameterRefId parents) (ns,name) 
+            match result |> snd, parents with
+            | Some x, _ -> return Some x
+            | _, [] -> return None
+            | _, p::ps -> return! tryGetParameterIdsRecurse ps (ns,name)
                    }
 
 
@@ -74,6 +87,11 @@ module RefIds =
     let getForEachEnumeratorVariableGuid parents variableName =
       let path = (System.String.Join("\\", List.rev parents))
       let refId = sprintf "%s.ForEachEnumerator.VariableMapping[%s]" path variableName
+      DtsIdState.getDtsId refId
+    
+    let getForEachEnumeratorParameterGuid parents parameterName =
+      let path = (System.String.Join("\\", List.rev parents))
+      let refId = sprintf "%s.ForEachEnumerator.ParameterMapping[%s]" path parameterName
       DtsIdState.getDtsId refId
 
     let getPipelineComponentRefId parents name = System.String.Join("\\", List.rev (name::parents))
@@ -285,6 +303,73 @@ module DefaultElements =
             let mapper = parents |> RefIds.getVariableIds |> buildVariable
             let! content = vars |> DtsIdState.listmap mapper
             return createDtsElement "Variables" |> XmlElement.setContent [ yield! content ]
+                   }
+
+    let buildParameter assigner par =
+        dtsIdState {
+            let ns, name = par |> Parameters.getQualifiedName 
+            let! _, dtsId = (ns, name) |> assigner
+
+            let nullRefData =
+                let nsp =
+                    [
+                        "http://schemas.xmlsoap.org/soap/envelope/" , "SOAP-ENV"
+                        "http://www.w3.org/2001/XMLSchema" , "xsd"
+                    ]
+                XmlElement.create "Envelope" "http://schemas.xmlsoap.org/soap/envelope/" nsp
+                |> XmlElement.setAttributes [ XmlAttribute.create "encodingStyle" "http://schemas.xmlsoap.org/soap/envelope/" "http://schemas.xmlsoap.org/soap/encoding/" ]
+                |> XmlElement.setContent
+                    [
+                        XmlElement.create "Body" "http://schemas.xmlsoap.org/soap/envelope/" nsp
+                        |> XmlElement.setContent
+                            [
+                                XmlElement.create "anyType" "http://www.w3.org/2001/XMLSchema" nsp
+                                |> XmlElement.setAttributes
+                                    [
+                                        XmlAttribute.create "id" "" "ref-1"
+                                    ]
+                            ]
+                    ]
+
+            let subTypeAttrs, valueContent = 
+                match par.value with
+                | CfData.Object ->
+                    [ createDtsAttribute "DataSubType" "ManagedSerializable" ] , [nullRefData]
+                | _ -> 
+                    let valueString = par.value |> dataValueToString
+                    [], System.String.IsNullOrEmpty(valueString) |> [] @?@ [valueString |> Text]
+
+            let parameterValue = [ createDtsAttribute "Name" "ParameterValue" ]
+
+            return 
+                createDtsElement "PackageParameter"
+                |> XmlElement.setAttributes
+                    [
+                        yield DefaultProperties.objectName name
+                        yield DefaultProperties.dtsId dtsId
+                        yield par.isRequired |> boolToTitleCase |> createDtsAttribute "Required"
+                        //yield par.isSensitive |> boolToTitleCase |> createDtsAttribute "Sensitive"
+                    ]
+                |> XmlElement.setContent 
+                    [ 
+                        yield createDtsElement "Property"
+                              |> XmlElement.setAttributes 
+                                    [
+                                       yield par.value |> CfData.getType |> (int) |> (string) |> createDtsAttribute "DataType"
+                                    ]
+                              |> XmlElement.addAttributes parameterValue
+                              //|> XmlElement.addAttributes subTypeAttrs
+                              |> XmlElement.setContent valueContent
+                    ]
+
+                   }
+
+    let buildParameters parents pars =
+
+        dtsIdState {
+            let mapper = parents |> RefIds.getParameterIds |> buildParameter
+            let! content = pars |> DtsIdState.listmap mapper
+            return createDtsElement "PackageParameters" |> XmlElement.setContent [ yield! content ]
                    }
 
     let buildLoggingOptions (loggingOptions : CfLoggingOptions) =
