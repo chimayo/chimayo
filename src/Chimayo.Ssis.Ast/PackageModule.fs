@@ -172,6 +172,25 @@ let addVariables = swapAndFoldList addVariable
 /// Clear package variables
 let clearVariables (pkg : CftPackage) = { pkg with variables = [] }
 
+// ------------------ Parameters
+
+/// Get package parameters
+let getParameters (pkg : CftPackage) = pkg.parameters
+
+/// Add a parameter to a package
+let addParameter par pkg =
+    let adder par pkg = { pkg with parameters = par :: pkg.parameters } : CftPackage
+    let comparer (a,b) (c,d) = stringCompareInvariantIgnoreCase a c && stringCompareInvariantIgnoreCase b d
+    let tryAdd' = tryAdd getParameters Parameters.getQualifiedName adder comparer
+    pkg |> tryAdd' par
+
+/// Add multiple parameters to a package
+let addParameters = swapAndFoldList addParameter 
+
+/// Clear package parameters
+let clearParameters (pkg : CftPackage) = { pkg with parameters = [] }
+
+
 // ------------------ Logging
 
 /// Get the logging options defined on a package
