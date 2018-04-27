@@ -931,7 +931,7 @@ NUGET
       System.Xml.ReaderWriter (>= 4.3) - restriction: || (&& (< monoandroid) (< monotouch) (< net45) (>= netstandard1.3) (< win8) (< wpa81) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)) (&& (< monoandroid) (< net45) (>= netstandard1.0) (< netstandard1.3) (< win8) (< wp8) (< wpa81)) (< portable-net45+win8+wp8+wpa81)
 GITHUB
   remote: fsharp/FAKE
-    modules/Octokit/Octokit.fsx (b3961e973484a8dc61ee94af13fc6898d0bee705)
+    modules/Octokit/Octokit.fsx (7f99a9c4350b6b15a044254977c882574cd72b61)
       Octokit (>= 0.20)
 GROUP Test
 NUGET
