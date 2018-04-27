@@ -70,6 +70,7 @@
     <Compile Include="LoggingOptions.fs" />
     <Compile Include="ConnectionManagers.fs" />
     <Compile Include="Variables.fs" />
+    <Compile Include="Parameters.fs" />
     <Compile Include="PackageConfigurations.fs" />
     <Compile Include="LogProviders.fs" />
     <Compile Include="ExecutableTaskCommon.fs" />

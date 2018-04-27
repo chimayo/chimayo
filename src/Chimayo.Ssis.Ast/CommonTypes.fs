@@ -246,6 +246,47 @@ type CfVariable =
         raiseChangedEvent : bool
     }
 
+/// Reference to an SSIS parameter
+type CfParemeterRef =
+    {
+        ``namespace``: string
+        name: string
+    }
+    /// <summary>Translates a string of the form '[namespace::]name' to an instance of CfParemeterRef.
+    /// <para>If a namespace is not provided, the namespace '$Package' is used.</para>
+    /// </summary>
+    static member fromString (value:string) : CfParemeterRef =
+                            let n,ns = 
+                                match value.Split([|"::"|], 2, System.StringSplitOptions.None) with
+                                | [| ns ; name |] -> name,ns
+                                | [| name |] -> name, "$Package"
+                                | _ -> failwith "invalid parameter name"
+                            { ``namespace`` = ns; name = n }
+    /// Translates a CfParemeterRef to the form 'namespace::name'
+    static member toString (value:CfParemeterRef) : string = sprintf "%s::%s" value.``namespace`` value.name
+    /// Explicit constructor for CfParemeterRef
+    static member create ns name = { ``namespace`` = ns ; name = name }
+    (*
+    /// Create a new CfParemeterRef which differs only by namespace
+    static member setNamespace ns vr = { vr with ``namespace`` = ns }
+    /// Create a new CfParemeterRef which differs only by name
+    static member setName name vr = { vr with name = name }
+    *)
+    /// Retrieve the namespace from a CfParemeterRef
+    static member getNamespace vr = vr.``namespace``
+    /// Retrieve the name from a CfParemeterRef
+    static member getName vr = vr.name
+
+/// Definition of an SSIS parameter
+type pkParameter =
+    {
+        ``namespace`` : string
+        name : string
+        value: CfData
+        isRequired : bool
+        isSensitive : bool
+    }
+
 /// Reference to another object in the SSIS package
 [<RequireQualifiedAccessAttribute>]
 type CfRef =
@@ -254,11 +295,13 @@ type CfRef =
 //    | RelativeExecutableRef of string list
     | ConnectionManagerRef of string
     | VariableRef of CfVariableRef
+    | ParameterRef of CfParemeterRef
     static member get_current_object = function | CurrentObject -> () | _ -> failwith "Invalid reference type"
 //    static member get_absolute_executable_ref = function | AbsoluteExecutableRef ref -> ref | _ -> failwith "Invalid reference type"
 //    static member get_relative_executable_ref = function | RelativeExecutableRef ref -> ref | _ -> failwith "Invalid reference type"
     static member get_connection_manager_ref = function | ConnectionManagerRef ref -> ref | _ -> failwith "Invalid reference type"
     static member get_variable_ref = function | VariableRef ref -> ref | _ -> failwith "Invalid reference type"
+    static member get_parameter_ref = function | ParameterRef ref -> ref | _ -> failwith "Invalid reference type"
 
 /// Outcome of an executable execution
 type CfExecutableResult =

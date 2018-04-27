@@ -13,6 +13,7 @@ let buildPkgContent ``namespace`` (pkg : CftPackage) =
     
     let cmListName, cmListDeclaration = ConnectionManagers.build pkg.connectionManagers
     let varListName, varListDeclaration = Variables.build pkg.variables
+    let parListName, parListDeclaration = Parameters.build pkg.parameters
     let configListName, configListDeclaration = PackageConfigurations.build pkg.configurations
     let execListName, execDeclarations = Executables.build pkg.executables
 
@@ -44,6 +45,7 @@ let buildPkgContent ``namespace`` (pkg : CftPackage) =
                                                 <@ Chimayo.Ssis.Ast.ControlFlowApi.Package.forceResultValue @>)
 
                 yield functionApplicationQ <@ Chimayo.Ssis.Ast.ControlFlowApi.Package.addConnectionManagers @> [cmListName]
+                yield functionApplicationQ <@ Chimayo.Ssis.Ast.ControlFlowApi.Package.addParameters @> [parListName]
                 yield functionApplicationQ <@ Chimayo.Ssis.Ast.ControlFlowApi.Package.addVariables @> [varListName]
                 yield functionApplicationQ <@ Chimayo.Ssis.Ast.ControlFlowApi.Package.addConfigurations @> [configListName]
                 yield functionApplicationQ <@ Chimayo.Ssis.Ast.ControlFlowApi.Package.addExpressions @> [ Core.buildPropertyExpressions pkg.propertyExpressions ]
@@ -62,6 +64,7 @@ let buildPkgContent ``namespace`` (pkg : CftPackage) =
                     yield BlankLine
                     yield! TypeNameRegistry.aliases |> List.filter (fun (_,x,_) -> x) |> List.map (fun (a,_,b) -> a,b) |> List.map ModuleAlias
                     yield! [BlankLine ; cmListDeclaration]
+                    yield! [BlankLine ; parListDeclaration]
                     yield! [BlankLine ; varListDeclaration]
                     yield! [BlankLine ; configListDeclaration]
                     yield BlankLine

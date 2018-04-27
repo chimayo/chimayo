@@ -84,6 +84,7 @@
     <Compile Include="Pipeline.Destination.Recordset.fs" />
     <Compile Include="PipelineTask.fs" />
     <Compile Include="Executables.fs" />
+    <Compile Include="Parameters.fs" />
     <Compile Include="Package.fs" />
     <Compile Include="Reader.fs" />
     <Content Include="paket.references" />

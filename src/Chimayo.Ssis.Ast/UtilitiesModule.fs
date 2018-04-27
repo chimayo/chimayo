@@ -220,6 +220,70 @@ module Variables =
     /// Transform a CfVariable by setting the raise changed event flag
     let setRaiseChangedEvent enabled (v:CfVariable) = { v with raiseChangedEvent = enabled }
 
+/// API to support working with parameters
+module Parameters =
+
+    /// Get the namespace and name of a parameter
+    let getQualifiedName (parameter: pkParameter) = parameter.``namespace``, parameter.name
+    /// Get the value of a parameter
+    let getValue (parameter: pkParameter) = parameter.value
+    /// Get the data type of a parameter
+    let getDataType (parameter: pkParameter) = parameter.value |> CfData.getType
+    /// <summary>Translates a string of the form '[namespace::]name' to an instance of CfParameterRef.
+    /// <para>If a namespace is not provided, the namespace '$Package' is used.</para>
+    /// </summary>
+    let link = CfParemeterRef.fromString
+
+    /// Translates a CfParameterRef to the form 'namespace::name'
+    let scopedReferenceToString = CfParemeterRef.toString
+
+    /// Translates a string of the form '[namespace::]name' to 'namespace'. The namespace '$Package' is returned if none is provided.
+    let getNamespaceFromQualifiedName qualifiedName = qualifiedName |> link |> fun s -> s.``namespace``
+    /// Translates a string of the form '[namespace::]name' to 'name'.
+    let getNameFromQualifiedName qualifiedName = qualifiedName |> link |> fun s -> s.name
+
+    /// Construct a new CfParameter value with explicit values for all properties
+    let createWithDataValue ``namespace`` name value isRequired isSensitive =
+        {
+            ``namespace`` = ``namespace``
+            name = name
+            value = value
+            isRequired = isRequired
+            isSensitive = isSensitive
+        }
+
+    /// Construct a new CfParameter value where the value construction is delegated to CfData.create
+    let create ``namespace`` name value isRequired isSensitive= 
+        createWithDataValue ``namespace`` name (CfData.create value) isRequired isSensitive
+
+    /// Construct a new CfParameter value with the following properties: not required, not sensitive
+    let createSimple qualifiedName value =
+        let spr = link qualifiedName
+        create spr.``namespace`` spr.name value false false
+
+    ///// Produces the fully qualified SSIS path to a specific parameter
+    //let getAbsoluteName executableNameList (qualifiedName : CfParemeterRef) =
+    //    let parents = "Package" :: executableNameList
+    //    let ns, name = qualifiedName.``namespace``, qualifiedName.name
+    //    sprintf "\\%s.Parameters[%s::%s]" (System.String.Join("\\", parents)) ns name
+
+    /// Transform a pkParameter by changing the value
+    let setValue value v = { v with value = value } : pkParameter
+    /// Get the value of the required flag
+    let isRequired (v:pkParameter) = v.isRequired
+    /// Get the value of the raises changed event flag
+    let isSensitive (v:pkParameter) = v.isSensitive
+    /// Get the name of the parameter
+    let getName (v:pkParameter) = v.name
+    /// Transform a pkParameter by providing a new namespace and name
+    let setName nameAndNamespace (v:pkParameter) = 
+        let ns,name = nameAndNamespace |> CfParemeterRef.fromString |> fun x -> x.``namespace``, x.name
+        { v with name = name ; ``namespace`` = ns }
+    /// Transform a pkParameter by setting the read only flag
+    let setRequired enabled (v:pkParameter) = { v with isRequired = enabled }
+    /// Transform a pkParameter by setting the raise changed event flag
+    let setSensitive enabled (v:pkParameter) = { v with isSensitive = enabled }
+
 /// API to support working with property expressions
 module Expressions =
     /// Create a new property expression definition
