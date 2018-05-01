@@ -14,7 +14,7 @@ open Chimayo.Ssis.Reader2012.Common
 open Chimayo.Ssis.Reader2012.Pipeline.Common
 
 [<Literal>]
-let classId = "{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+let classId = "DTSAdapter.OLEDBDestination.3"
 
 module FastLoadOptionParser =
     open FParsec

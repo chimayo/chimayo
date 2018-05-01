@@ -11,7 +11,7 @@ open Chimayo.Ssis.Reader2012.Pipeline
 open Chimayo.Ssis.Reader2012.Pipeline.Common
 
 [<Literal>]
-let classId = "{E2697D8C-70DA-42B2-8208-A19CE3A9FE41}"
+let classId = "DTSTransform.RowCount.3"
 
 let readResultVariable nav =
     nav 
