@@ -11,7 +11,7 @@ open Chimayo.Ssis.Reader2016.Pipeline
 open Chimayo.Ssis.Reader2016.Pipeline.Common
 
 [<Literal>]
-let classId = "{E2697D8C-70DA-42B2-8208-A19CE3A9FE41}"
+let classId = "Microsoft.RowCount"
 
 let readResultVariable nav =
     nav 

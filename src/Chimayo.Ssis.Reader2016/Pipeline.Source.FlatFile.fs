@@ -8,7 +8,7 @@ open Chimayo.Ssis.Reader2016.Common
 open Chimayo.Ssis.Reader2016.Pipeline.Common
 
 [<Literal>]
-let classId = "{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+let classId = "Microsoft.FlatFileSource"
 
 let readMetaDataColumn nav =
     let refId = nav |> Extractions.anyString "@refId" ""
