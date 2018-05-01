@@ -11,7 +11,7 @@ open Chimayo.Ssis.Reader2012.Pipeline
 open Chimayo.Ssis.Reader2012.Pipeline.Common
 
 [<Literal>]
-let classId = "{B594E9A8-4351-4939-891C-CFE1AB93E925}"
+let classId = "DTSTransform.UnionAll.3"
 
 let readInputColumn nav =
     let inputName = nav |> Extractions.anyString "ancestor::input/@name" "" |> DfName

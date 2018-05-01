@@ -9,7 +9,7 @@ open Chimayo.Ssis.Reader2012.Common
 open Chimayo.Ssis.Reader2012.Pipeline.Common
 
 [<Literal>]
-let classId = "{671046B0-AA63-4C9F-90E4-C06E0B710CE3}"
+let classId = "DTSTransform.Lookup.3"
 
 let readOutputColumns nav =
     let codepage = nav |> Extractions.anyInt "@codePage" Defaults.codePage

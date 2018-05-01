@@ -9,7 +9,7 @@ open Chimayo.Ssis.Reader2012.Pipeline
 open Chimayo.Ssis.Reader2012.Pipeline.Common
 
 [<Literal>]
-let classId = "{49928E82-9C4E-49F0-AABE-3812B82707EC}"
+let classId = "DTSTransform.DerivedColumn.3"
 
 let readNewColumn nav : DfDerivedColumnColumn =
     let codepage = nav |> Extractions.anyInt "@codePage" Defaults.codePage

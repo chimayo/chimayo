@@ -10,7 +10,7 @@ open Chimayo.Ssis.Reader2012.Pipeline
 open Chimayo.Ssis.Reader2012.Pipeline.Common
 
 [<Literal>]
-let classId = "{7F88F654-4E20-4D14-84F4-AF9C925D3087}"
+let classId = "DTSTransform.ConditionalSplit.3"
 
 let readOutput nav =
     {

@@ -3,6 +3,7 @@
 type Version =
     | Ssis2008
     | Ssis2012
+    | Ssis2016
 
 [<RequireQualifiedAccessAttribute>]
 type RunOptions =

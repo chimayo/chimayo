@@ -30,6 +30,10 @@ let makeScopedVariableReference (svr:CfVariableRef) =
     let value = svr |> CfVariableRef.toString |> constant
     UnaryOp (true, "!@", value) |> InlineExpression
 
+let makeScopedParameterReference (spr:CfParemeterRef) =
+    let value = spr |> CfParemeterRef.toString |> constant
+    UnaryOp (true, "!@", value) |> InlineExpression
+
 let makeNamedReference parenthesise (nr : CfRef) =
     let paren = parenthesise |> (parentheses false) @?@ id
     match nr with
@@ -62,3 +66,11 @@ let makeNamedReference parenthesise (nr : CfRef) =
         |> functionApplication "CfRef.VariableRef" 
         |> paren
         |> InlineExpression
+    | CfRef.ParameterRef spr ->
+        spr
+        |> makeScopedParameterReference
+        |> makeList
+        |> functionApplication "CfRef.ParameterRef"
+        |> paren
+        |> InlineExpression
+        
