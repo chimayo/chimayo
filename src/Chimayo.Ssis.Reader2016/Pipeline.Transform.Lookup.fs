@@ -9,7 +9,7 @@ open Chimayo.Ssis.Reader2016.Common
 open Chimayo.Ssis.Reader2016.Pipeline.Common
 
 [<Literal>]
-let classId = "{671046B0-AA63-4C9F-90E4-C06E0B710CE3}"
+let classId = "Microsoft.Lookup"
 
 let readOutputColumns nav =
     let codepage = nav |> Extractions.anyInt "@codePage" Defaults.codePage

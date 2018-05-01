@@ -13,7 +13,7 @@ open Chimayo.Ssis.Reader2016.Common
 open Chimayo.Ssis.Reader2016.Pipeline.Common
 
 [<Literal>]
-let classId = "{C457FD7E-CE98-4C4B-AEFE-F3AE0044F181}"
+let classId = "Microsoft.RecordsetDestination"
 
 let (|ReadOnly|ReadWrite|) (value:string) =
     match value.ToUpperInvariant() with

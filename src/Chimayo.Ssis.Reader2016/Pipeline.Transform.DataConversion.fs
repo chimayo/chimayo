@@ -12,7 +12,7 @@ open Chimayo.Ssis.Reader2016.Common
 open Chimayo.Ssis.Reader2016.Pipeline.Common
 
 [<Literal>]
-let classId = "{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+let classId = "Microsoft.DataConvert"
 
 let readColumn nav : DfDataConversionColumn =
     let name = nav |> Extractions.anyString "@name" ""
