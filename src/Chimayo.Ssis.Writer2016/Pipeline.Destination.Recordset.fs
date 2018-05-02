@@ -64,7 +64,7 @@ let build parents (c : DfComponent) (m : DfPipeline) =
                 [
                     yield createAttribute "name" c.name
                     yield createAttribute "refId" refId
-                    yield createAttribute "componentClassID" "{C457FD7E-CE98-4C4B-AEFE-F3AE0044F181}"
+                    yield createAttribute "componentClassID" "Microsoft.RecordsetDestination"
                     yield! c.localeId |> optionMapToList (string >> createAttribute "localeId")
                     yield! c.usesDispositions |> optionMapToList (boolToLowerCase >> createAttribute "usesDispositions")
                     yield! c.validateExternalMetadata |> optionMapToList (boolToTitleCase >> createAttribute "validateExternalMetadata")

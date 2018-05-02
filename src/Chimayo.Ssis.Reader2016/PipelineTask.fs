@@ -11,12 +11,12 @@ open Chimayo.Ssis.Reader2016.Pipeline.Common
 
 let taskNames = 
     [
-        "SSIS.Pipeline"
-        "SSIS.Pipeline.3"
-        "STOCK:PipelineTask"
-        "STOCK:SSIS.Pipeline"
+        //"SSIS.Pipeline"
+        //"SSIS.Pipeline.3"
+        //"STOCK:PipelineTask"
+        //"STOCK:SSIS.Pipeline"
         "Microsoft.Pipeline"
-        "{5918251B-2970-45A4-AB5F-01C3C588FE5A}" // SSIS.Pipeline.3
+        //"{5918251B-2970-45A4-AB5F-01C3C588FE5A}" // SSIS.Pipeline.3
     ]
 
 

@@ -203,7 +203,7 @@ let build parents (c : DfComponent) (m : DfPipeline) =
                 [
                     yield createAttribute "name" c.name
                     yield createAttribute "refId" refId
-                    yield createAttribute "componentClassID" "{671046B0-AA63-4C9F-90E4-C06E0B710CE3}"
+                    yield createAttribute "componentClassID" "Microsoft.Lookup"
                     yield createAttribute "version" "6"
                     yield! c.localeId |> optionMapToList (string >> createAttribute "localeId")
                     yield! c.usesDispositions |> optionMapToList (boolToLowerCase >> createAttribute "usesDispositions")

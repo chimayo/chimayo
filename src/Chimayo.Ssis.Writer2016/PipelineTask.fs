@@ -60,7 +60,7 @@ let buildPaths (parents:string list) (t : CftPipeline) =
 let build parents (t : CftPipeline) =
     dtsIdState {
 
-        let! elem = getBasicTaskElement "SSIS.Pipeline.3" parents t.executableTaskBase
+        let! elem = getBasicTaskElement "Microsoft.Pipeline" parents t.executableTaskBase
 
         let! pipelineId = DtsIdState.getUniqueCounterValue
 

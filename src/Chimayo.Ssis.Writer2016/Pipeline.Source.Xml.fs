@@ -198,7 +198,7 @@ let build parents (c : DfComponent) =
                 [
                     yield createAttribute "name" c.name
                     yield createAttribute "refId" refId
-                    yield createAttribute "componentClassID" "{874F7595-FB5F-40FF-96AF-FBFF8250E3EF}"
+                    yield createAttribute "componentClassID" "{2E42D45B-F83C-400F-8D77-61DDE6A7DF29}"
                     yield createAttribute "version" "2"
                     yield! c.localeId |> optionMapToList (string >> createAttribute "localeId")
                     yield! c.usesDispositions |> optionMapToList (boolToLowerCase >> createAttribute "usesDispositions")
