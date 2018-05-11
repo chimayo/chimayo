@@ -9,7 +9,7 @@ open Chimayo.Ssis.Reader2012.Common
 open Chimayo.Ssis.Reader2012.Pipeline.Common
 
 [<Literal>]
-let classId = "{5B201335-B360-485C-BB93-75C34E09B3D3}"
+let classId = "DTSTransform.Aggregate.3"
 
 let mapScale =
     function

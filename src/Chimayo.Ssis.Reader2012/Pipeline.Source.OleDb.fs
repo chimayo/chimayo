@@ -10,7 +10,7 @@ open Chimayo.Ssis.Reader2012.Common
 open Chimayo.Ssis.Reader2012.Pipeline.Common
 
 [<Literal>]
-let classId = "{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+let classId = "DTSAdapter.OLEDBSource.3"
 
 let readMetaDataColumn nav =
     let refId = nav |> Extractions.anyString "@refId" ""

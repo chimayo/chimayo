@@ -3,6 +3,7 @@
 open Chimayo.Ssis.Xml.XPath
 open Chimayo.Ssis.Ast.ControlFlow
 open Chimayo.Ssis.Reader2012.Internals
+open Chimayo.Ssis.Ast.ControlFlowApi
 
 let read (nav:NavigatorRec) : CftPackage =
     { 
@@ -33,4 +34,5 @@ let read (nav:NavigatorRec) : CftPackage =
         localeId = nav |> Extractions.localeId
         transactionOption = nav |> Extractions.transactionOption
         delayValidation = nav |> Extractions.delayValidation
+        parameters = nav |> Parameters.read
     }
